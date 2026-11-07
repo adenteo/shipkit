@@ -1,0 +1,15 @@
+{
+  "name": "shipkit",
+  "description": "shipkit: a guided path from iOS app code to a live App Store listing.",
+  "owner": {
+    "name": "Aden Teo"
+  },
+  "plugins": [
+    {
+      "name": "shipkit",
+      "source": "./",
+      "description": "A guided path from app code to the App Store.",
+      "version": "0.2.1"
+    }
+  ]
+}

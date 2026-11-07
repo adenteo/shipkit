@@ -1,0 +1,15 @@
+<script>
+// Shrink the headline until it fits its box, so long translations never overflow.
+(function () {
+  var h1 = document.querySelector('h1'); if (!h1) return;
+  var box = document.querySelector('header') || document.querySelector('.band');
+  var maxH = {{maxHeader}};
+  function fit() {
+    var size = parseFloat(getComputedStyle(h1).fontSize), n = 0;
+    while (n++ < 40 && (h1.scrollWidth > h1.clientWidth + 1 || box.getBoundingClientRect().height > maxH) && size > 40) {
+      size *= 0.94; h1.style.fontSize = size + 'px';
+    }
+  }
+  (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(fit);
+})();
+</script>

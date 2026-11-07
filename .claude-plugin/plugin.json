@@ -1,0 +1,23 @@
+{
+  "name": "shipkit",
+  "version": "0.2.1",
+  "description": "A guided path from app code to the App Store: vibe and icon, payments, analytics, website and policies, keyword research and listing copy, screenshots, localization, App Store Connect, worldwide pricing, signed builds, review and launch.",
+  "author": {
+    "name": "Aden Teo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "app-store",
+    "app-store-connect",
+    "aso",
+    "ios",
+    "keywords",
+    "launch",
+    "localization",
+    "posthog",
+    "pricing",
+    "revenuecat",
+    "screenshots",
+    "testflight"
+  ]
+}

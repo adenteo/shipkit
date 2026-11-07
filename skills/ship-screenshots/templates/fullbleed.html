@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8">
+{{fontLink}}
+<style>
+{{base_css}}
+.shot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: {{shotPos}}; }
+.band {
+  position: absolute; left: 0; right: 0; text-align: center;
+  background: linear-gradient(170deg, var(--bg1), var(--bg2));
+  box-shadow: 0 0 calc(var(--u) * 120) rgba(0,0,0,.35);
+}
+.band.bottom { bottom: 0; padding: calc(var(--u) * 90) calc(var(--u) * 90) calc(var(--u) * 150);
+  border-radius: calc(var(--u) * 100) calc(var(--u) * 100) 0 0; }
+.band.top { top: 0; padding: calc(var(--u) * 170) calc(var(--u) * 90) calc(var(--u) * 90);
+  border-radius: 0 0 calc(var(--u) * 100) calc(var(--u) * 100); }
+.band h1 { font-size: calc(var(--u) * {{hsize}}); }
+</style></head>
+<body>
+<img class="shot" src="{{img1}}">
+<div class="band {{pos}}"><div class="headblock"><h1>{{headline}}</h1>{{subline}}</div></div>
+{{autofit}}
+</body></html>

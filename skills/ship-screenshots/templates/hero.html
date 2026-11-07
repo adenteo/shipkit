@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8">
+{{fontLink}}
+<style>
+{{base_css}}
+.device { width: calc(var(--u) * {{hdw}}); }
+.d2 { right: calc(var(--u) * -60); top: calc(var(--u) * 20); transform: rotate(3.5deg); z-index: 1; }
+.d1 { left: calc(var(--u) * -60); bottom: calc(var(--u) * -150); transform: rotate(-3.5deg); z-index: 2; }
+</style></head>
+<body><div class="wrap">
+<header><h1>{{headline}}</h1>{{subline}}</header>
+<div class="stage">
+  <div class="device d2"><img src="{{img2}}"></div>
+  <div class="device d1"><img src="{{img1}}"></div>
+</div>
+</div>
+{{autofit}}
+</body></html>

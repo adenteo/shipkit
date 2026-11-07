@@ -1,0 +1,31 @@
+{
+  "_comment": "Example produce batch. Paths are relative to this file. Run: python3 imagine.py gen example-batch.json --dry-run",
+  "size": "1024x1024",
+  "quality": "medium",
+  "output_dir": "out",
+  "reference_image": "",
+  "style_preamble": "Soft gouache illustration on warm off-white paper, palette #F4EDE4 #C8553D #2E4057 #E8B04B, gentle grain, no text, no letters, no logos. The image shows ",
+  "post_process": {
+    "transparent_background": false,
+    "flood_fill_tolerance": 40,
+    "crop_to_subject": false,
+    "crop_margin_pct": 0.08
+  },
+  "images": [
+    {
+      "name": "onboarding-1",
+      "prompt": "a person sitting by a window at night writing in a small notebook, a cup of tea beside them, subject in the lower middle third, lots of plain empty space above",
+      "size": "1024x1536"
+    },
+    {
+      "name": "empty-journal",
+      "prompt": "a single closed notebook with a ribbon bookmark resting on a plain surface, calm and simple, centred, plenty of empty space around it"
+    },
+    {
+      "name": "badge-7-nights",
+      "prompt": "a round embroidered patch with a crescent moon and seven small stars, large and centred, with a clear even margin of plain flat #F4EDE4 background on all four sides, it must not touch any edge or corner",
+      "transparent": true,
+      "crop": true
+    }
+  ]
+}

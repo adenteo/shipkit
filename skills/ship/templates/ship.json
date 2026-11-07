@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "app": {
+    "name": "",
+    "tagline": "",
+    "oneLiner": "",
+    "audience": "",
+    "platforms": [
+      "ios"
+    ],
+    "stack": "swiftui",
+    "repo": ".",
+    "bundleId": "",
+    "sku": "",
+    "teamId": "",
+    "ascAppId": "",
+    "marketingVersion": "1.0.0",
+    "primaryLocale": "en-US",
+    "isGame": false,
+    "supportsIpad": false
+  },
+  "vibe": {
+    "direction": "",
+    "keywords": [],
+    "palette": {
+      "bg": "",
+      "surface": "",
+      "text": "",
+      "primary": "",
+      "accent": ""
+    },
+    "fonts": {
+      "display": "",
+      "body": ""
+    },
+    "references": [],
+    "avoid": []
+  },
+  "features": {
+    "payments": "none",
+    "analytics": "none",
+    "ads": "none",
+    "accounts": "none",
+    "gameCenter": false,
+    "notifications": "none",
+    "audio": false,
+    "localizations": [
+      "en-US"
+    ]
+  },
+  "images": {
+    "backend": "",
+    "model": "gpt-image-2",
+    "codexModel": "",
+    "shipArt": null
+  },
+  "localize": {
+    "engine": "",
+    "model": "",
+    "keep": [],
+    "noDashes": false,
+    "voice": ""
+  },
+  "secrets": {
+    "ascEnv": "",
+    "revenuecatEnv": "",
+    "posthogEnv": "",
+    "openaiEnv": "",
+    "falEnv": "",
+    "geminiEnv": ""
+  },
+  "build": {
+    "scheme": "",
+    "project": "",
+    "lastBuildNumber": "",
+    "lastVersion": ""
+  },
+  "screenshots": {
+    "style": "framed",
+    "bgMode": "cycle",
+    "frame": "#101114"
+  },
+  "monetization": {
+    "price": "free",
+    "products": [],
+    "priceModel": "gni",
+    "priceRatios": {
+      "2": 0.6,
+      "3": 0.3
+    },
+    "priceBands": {}
+  },
+  "site": {
+    "kind": "nextjs",
+    "dir": "",
+    "domain": "",
+    "host": "vercel",
+    "owner": "",
+    "supportEmail": "",
+    "urls": {
+      "marketing": "",
+      "support": "",
+      "privacy": "",
+      "terms": ""
+    }
+  },
+  "store": {
+    "primaryCategory": "",
+    "secondaryCategory": "",
+    "copyright": "",
+    "availability": "all",
+    "ageRating": {},
+    "privacyLabels": [],
+    "review": {
+      "contactFirstName": "",
+      "contactLastName": "",
+      "contactEmail": "",
+      "contactPhone": "",
+      "demoAccountRequired": false,
+      "demoUser": "",
+      "demoPasswordEnv": "",
+      "notes": ""
+    },
+    "testflight": {
+      "groups": [
+        "Internal"
+      ],
+      "betaDescription": "",
+      "whatToTest": "",
+      "publicLink": false
+    },
+    "capabilities": [],
+    "excludeTerritories": [],
+    "contentRights": "DOES_NOT_USE_THIRD_PARTY_CONTENT",
+    "usesNonExemptEncryption": false,
+    "gameCenter": {
+      "leaderboards": [],
+      "achievements": []
+    }
+  },
+  "listing": {
+    "en-US": {
+      "name": "",
+      "subtitle": "",
+      "keywords": "",
+      "promotionalText": "",
+      "description": "",
+      "whatsNew": ""
+    }
+  },
+  "launch": {
+    "channels": [],
+    "previewVideo": false
+  }
+}
