@@ -1,0 +1,4 @@
+name: Toggle
+exclude:
+  - "*.py"
+  - "shots/**"

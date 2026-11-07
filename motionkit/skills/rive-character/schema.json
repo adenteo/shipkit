@@ -1,0 +1,4355 @@
+{
+"types": {
+"27": "Animation",
+"143": "AnimationFolder",
+"61": "AnimationState",
+"62": "AnyState",
+"1": "Artboard",
+"559": "ArtboardComponentList",
+"606": "ArtboardComponentListOverride",
+"648": "ArtboardListMapRule",
+"622": "AssetGroup",
+"406": "AudioAsset",
+"421": "AudioAssetClip",
+"407": "AudioEvent",
+"495": "AxisX",
+"494": "AxisY",
+"23": "Backboard",
+"597": "BindablePropertyArtboard",
+"588": "BindablePropertyAsset",
+"472": "BindablePropertyBoolean",
+"475": "BindablePropertyColor",
+"474": "BindablePropertyEnum",
+"567": "BindablePropertyInteger",
+"590": "BindablePropertyList",
+"473": "BindablePropertyNumber",
+"471": "BindablePropertyString",
+"503": "BindablePropertyTrigger",
+"662": "BindablePropertyViewModel",
+"136": "BitmapCache",
+"75": "BlendAnimation1D",
+"77": "BlendAnimationDirect",
+"76": "BlendState1DInput",
+"528": "BlendState1DViewModel",
+"73": "BlendStateDirect",
+"78": "BlendStateTransition",
+"649": "BlobAsset",
+"40": "Bone",
+"1087": "BrushSpine",
+"524": "ClampedScrollPhysics",
+"146": "ClipboardHeader",
+"42": "ClippingShape",
+"633": "CodeComponent",
+"641": "CodeDiff",
+"632": "CodeFile",
+"635": "CodeLine",
+"636": "CodePoint",
+"661": "CodeRun",
+"605": "ComponentAsset",
+"623": "ComponentGroup",
+"1039": "ComponentOrigin",
+"111": "ContourMeshVertex",
+"34": "CubicAsymmetricVertex",
+"6": "CubicDetachedVertex",
+"28": "CubicEaseInterpolator",
+"163": "CubicInterpolatorComponent",
+"35": "CubicMirroredVertex",
+"138": "CubicValueInterpolator",
+"46": "CubicWeight",
+"129": "CustomPropertyBoolean",
+"592": "CustomPropertyColor",
+"616": "CustomPropertyEnum",
+"548": "CustomPropertyGroup",
+"127": "CustomPropertyNumber",
+"130": "CustomPropertyString",
+"613": "CustomPropertyTrigger",
+"507": "Dash",
+"506": "DashPath",
+"446": "DataBind",
+"447": "DataBindContext",
+"643": "DataBindPath",
+"535": "DataConverterBooleanNegate",
+"526": "DataConverterEnumToUint",
+"536": "DataConverterFormula",
+"499": "DataConverterGroup",
+"498": "DataConverterGroupItem",
+"534": "DataConverterInterpolator",
+"591": "DataConverterListToLength",
+"568": "DataConverterNumberToList",
+"516": "DataConverterOperation",
+"500": "DataConverterOperationValue",
+"517": "DataConverterOperationViewModel",
+"519": "DataConverterRangeMapper",
+"489": "DataConverterRounder",
+"530": "DataConverterStringPad",
+"531": "DataConverterStringRemoveZeros",
+"532": "DataConverterStringTrim",
+"514": "DataConverterSystemDegsToRads",
+"515": "DataConverterSystemNormalizer",
+"617": "DataConverterToNumber",
+"490": "DataConverterToString",
+"504": "DataConverterTrigger",
+"510": "DataEnum",
+"438": "DataEnumCustom",
+"512": "DataEnumSystem",
+"445": "DataEnumValue",
+"595": "DataFolder",
+"624": "DataGroup",
+"82": "DistanceConstraint",
+"49": "DrawRules",
+"48": "DrawTarget",
+"174": "ElasticInterpolator",
+"525": "ElasticScrollPhysics",
+"4": "Ellipse",
+"63": "EntryState",
+"128": "Event",
+"64": "ExitState",
+"533": "Feather",
+"106": "FileAssetContents",
+"20": "Fill",
+"1037": "FocusActionClear",
+"652": "FocusActionTarget",
+"672": "FocusActionTraversal",
+"653": "FocusData",
+"102": "Folder",
+"165": "FollowPathConstraint",
+"141": "FontAsset",
+"112": "ForcedEdge",
+"513": "ForegroundLayoutDrawable",
+"537": "FormulaToken",
+"538": "FormulaTokenArgumentSeparator",
+"542": "FormulaTokenFunction",
+"545": "FormulaTokenInput",
+"541": "FormulaTokenOperation",
+"539": "FormulaTokenParenthesis",
+"540": "FormulaTokenParenthesisClose",
+"544": "FormulaTokenParenthesisOpen",
+"543": "FormulaTokenValue",
+"974": "GamepadInput",
+"19": "GradientStop",
+"1068": "GridItemPlacement",
+"1058": "GridTrack",
+"645": "GroupEffect",
+"1040": "Guide",
+"1070": "GuideComponent",
+"1041": "GuideComponentInstance",
+"81": "IKConstraint",
+"100": "Image",
+"105": "ImageAsset",
+"148": "Joystick",
+"84": "KeyFrameBool",
+"171": "KeyFrameCallback",
+"37": "KeyFrameColor",
+"30": "KeyFrameDouble",
+"50": "KeyFrameId",
+"1067": "KeyFrameInt",
+"142": "KeyFrameString",
+"450": "KeyFrameUint",
+"664": "KeyboardInput",
+"25": "KeyedObject",
+"26": "KeyedProperty",
+"120": "LayerImageAsset",
+"119": "LayeredAsset",
+"409": "LayoutComponent",
+"420": "LayoutComponentStyle",
+"1057": "LayoutNodeStyle",
+"1066": "LayoutParticipant",
+"549": "LibraryArtboard",
+"558": "LibraryAsset",
+"639": "LibraryCodeFile",
+"562": "LibraryDataEnum",
+"561": "LibraryDataEnumValue",
+"650": "LibraryEvent",
+"557": "LibraryLinearAnimation",
+"552": "LibraryStateMachine",
+"589": "LibraryVersionDefault",
+"577": "LibraryViewModel",
+"610": "LibraryViewModelPropertyArtboard",
+"1045": "LibraryViewModelPropertyAssetBlob",
+"1036": "LibraryViewModelPropertyAssetFont",
+"608": "LibraryViewModelPropertyAssetImage",
+"583": "LibraryViewModelPropertyBoolean",
+"582": "LibraryViewModelPropertyColor",
+"580": "LibraryViewModelPropertyEnum",
+"628": "LibraryViewModelPropertyEnumSystem",
+"609": "LibraryViewModelPropertyList",
+"578": "LibraryViewModelPropertyNumber",
+"581": "LibraryViewModelPropertyString",
+"607": "LibraryViewModelPropertySymbolListIndex",
+"579": "LibraryViewModelPropertyTrigger",
+"576": "LibraryViewModelPropertyViewModel",
+"31": "LinearAnimation",
+"22": "LinearGradient",
+"625": "ListFollowPathConstraint",
+"619": "ListPath",
+"126": "ListenerAlignTarget",
+"117": "ListenerBoolChange",
+"168": "ListenerFireEvent",
+"658": "ListenerInputType",
+"659": "ListenerInputTypeEvent",
+"973": "ListenerInputTypeGamepad",
+"665": "ListenerInputTypeKeyboard",
+"669": "ListenerInputTypeSemantic",
+"666": "ListenerInputTypeText",
+"660": "ListenerInputTypeViewModel",
+"118": "ListenerNumberChange",
+"115": "ListenerTriggerChange",
+"487": "ListenerViewModelChange",
+"634": "LocalCursor",
+"133": "LottieAsset",
+"642": "ManifestAsset",
+"1088": "MarkupFragment",
+"109": "Mesh",
+"108": "MeshVertex",
+"508": "NSlicedNode",
+"493": "NSlicer",
+"491": "NSlicerTileMode",
+"92": "NestedArtboard",
+"452": "NestedArtboardLayout",
+"451": "NestedArtboardLeaf",
+"123": "NestedBool",
+"124": "NestedNumber",
+"98": "NestedRemapAnimation",
+"96": "NestedSimpleAnimation",
+"95": "NestedStateMachine",
+"122": "NestedTrigger",
+"2": "Node",
+"131": "OpenUrlEvent",
+"152": "Page",
+"113": "PaintImage",
+"16": "PointsPath",
+"51": "Polygon",
+"651": "ProfilerAsset",
+"17": "RadialGradient",
+"7": "Rectangle",
+"408": "RenderPreset",
+"41": "RootBone",
+"89": "RotationConstraint",
+"140": "RulerGuide",
+"132": "SVGAsset",
+"88": "ScaleConstraint",
+"529": "ScriptAsset",
+"621": "ScriptInputArtboard",
+"631": "ScriptInputBoolean",
+"626": "ScriptInputColor",
+"611": "ScriptInputNumber",
+"627": "ScriptInputString",
+"618": "ScriptInputTrigger",
+"612": "ScriptInputViewModelProperty",
+"1071": "ScriptModuleAsset",
+"629": "ScriptedDataConverter",
+"603": "ScriptedDrawable",
+"972": "ScriptedInterpolator",
+"637": "ScriptedLayout",
+"646": "ScriptedListenerAction",
+"640": "ScriptedPathEffect",
+"110": "ScriptedTransition",
+"647": "ScriptedTransitionCondition",
+"522": "ScrollBarConstraint",
+"521": "ScrollConstraint",
+"668": "SemanticData",
+"670": "SemanticInput",
+"970": "ShaderAsset",
+"3": "Shape",
+"43": "Skin",
+"18": "SolidColor",
+"147": "Solo",
+"52": "Star",
+"53": "StateMachine",
+"59": "StateMachineBool",
+"151": "StateMachineComponentFolder",
+"172": "StateMachineComponentNestedArtboard",
+"169": "StateMachineFireEvent",
+"614": "StateMachineFireTrigger",
+"149": "StateMachineInputFolder",
+"57": "StateMachineLayer",
+"654": "StateMachineListener",
+"150": "StateMachineListenerFolder",
+"114": "StateMachineListenerSingle",
+"173": "StateMachineNestedInput",
+"56": "StateMachineNumber",
+"58": "StateMachineTrigger",
+"65": "StateTransition",
+"5": "StraightVertex",
+"24": "Stroke",
+"166": "Tag",
+"644": "TargetEffect",
+"44": "Tendon",
+"134": "Text",
+"1042": "TextBlobAsset",
+"547": "TextFollowPathModifier",
+"569": "TextInput",
+"571": "TextInputCursor",
+"575": "TextInputSelectedText",
+"574": "TextInputSelection",
+"572": "TextInputText",
+"159": "TextModifierGroup",
+"158": "TextModifierRange",
+"573": "TextStyle",
+"144": "TextStyleAxis",
+"1069": "TextStyleBackground",
+"164": "TextStyleFeature",
+"137": "TextStylePaint",
+"135": "TextValueRun",
+"162": "TextVariationModifier",
+"83": "TransformConstraint",
+"497": "TransitionArtboardCondition",
+"71": "TransitionBoolCondition",
+"1038": "TransitionFocusCondition",
+"70": "TransitionNumberCondition",
+"496": "TransitionPropertyArtboardComparator",
+"667": "TransitionPropertyComponentComparator",
+"479": "TransitionPropertyViewModelComparator",
+"593": "TransitionSelfComparator",
+"68": "TransitionTriggerCondition",
+"630": "TransitionValueArtboardComparator",
+"602": "TransitionValueAssetComparator",
+"481": "TransitionValueBooleanComparator",
+"483": "TransitionValueColorComparator",
+"485": "TransitionValueEnumComparator",
+"601": "TransitionValueIdComparator",
+"484": "TransitionValueNumberComparator",
+"486": "TransitionValueStringComparator",
+"505": "TransitionValueTriggerComparator",
+"482": "TransitionViewModelCondition",
+"87": "TranslationConstraint",
+"8": "Triangle",
+"47": "TrimPath",
+"663": "UserInput",
+"435": "ViewModel",
+"429": "ViewModelComponent",
+"437": "ViewModelInstance",
+"599": "ViewModelInstanceArtboard",
+"586": "ViewModelInstanceAsset",
+"1044": "ViewModelInstanceAssetBlob",
+"1035": "ViewModelInstanceAssetFont",
+"587": "ViewModelInstanceAssetImage",
+"449": "ViewModelInstanceBoolean",
+"426": "ViewModelInstanceColor",
+"432": "ViewModelInstanceEnum",
+"441": "ViewModelInstanceList",
+"427": "ViewModelInstanceListItem",
+"442": "ViewModelInstanceNumber",
+"433": "ViewModelInstanceString",
+"566": "ViewModelInstanceSymbolListIndex",
+"501": "ViewModelInstanceTrigger",
+"428": "ViewModelInstanceValue",
+"444": "ViewModelInstanceViewModel",
+"430": "ViewModelProperty",
+"598": "ViewModelPropertyArtboard",
+"584": "ViewModelPropertyAsset",
+"1043": "ViewModelPropertyAssetBlob",
+"1034": "ViewModelPropertyAssetFont",
+"585": "ViewModelPropertyAssetImage",
+"448": "ViewModelPropertyBoolean",
+"440": "ViewModelPropertyColor",
+"509": "ViewModelPropertyEnum",
+"439": "ViewModelPropertyEnumCustom",
+"511": "ViewModelPropertyEnumSystem",
+"434": "ViewModelPropertyList",
+"431": "ViewModelPropertyNumber",
+"443": "ViewModelPropertyString",
+"564": "ViewModelPropertySymbolListIndex",
+"502": "ViewModelPropertyTrigger",
+"436": "ViewModelPropertyViewModel",
+"45": "Weight"
+},
+"props": {
+"54": {
+"name": "artboardId",
+"type": "Id"
+},
+"55": {
+"name": "name",
+"type": "String"
+},
+"73": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"282": {
+"name": "folderId",
+"type": "Id"
+},
+"382": {
+"name": "tagIds",
+"type": "List<Id>"
+},
+"149": {
+"name": "animationId",
+"type": "Id"
+},
+"292": {
+"name": "speed",
+"type": "double"
+},
+"146": {
+"name": "layerId",
+"type": "Id"
+},
+"147": {
+"name": "x",
+"type": "double"
+},
+"148": {
+"name": "y",
+"type": "double"
+},
+"536": {
+"name": "flags",
+"type": "uint"
+},
+"944": {
+"name": "stateName",
+"type": "String"
+},
+"945": {
+"name": "stateCaption",
+"type": "String"
+},
+"946": {
+"name": "captionFieldHeight",
+"type": "double"
+},
+"11": {
+"name": "originX",
+"type": "double"
+},
+"12": {
+"name": "originY",
+"type": "double"
+},
+"236": {
+"name": "defaultStateMachineId",
+"type": "Id"
+},
+"257": {
+"name": "animationsScrollOffset",
+"type": "double"
+},
+"267": {
+"name": "expandedComponents",
+"type": "List<Id>"
+},
+"283": {
+"name": "expandedFolders",
+"type": "List<Id>"
+},
+"291": {
+"name": "selectedAnimations",
+"type": "List<Id>"
+},
+"583": {
+"name": "viewModelId",
+"type": "Id"
+},
+"584": {
+"name": "viewModelInstanceId",
+"type": "Id"
+},
+"792": {
+"name": "isComponent",
+"type": "bool"
+},
+"802": {
+"name": "includeInExport",
+"type": "bool"
+},
+"949": {
+"name": "openAnimations",
+"type": "List<Id>"
+},
+"1039": {
+"name": "previewAnimationId",
+"type": "Id"
+},
+"1072": {
+"name": "artboardKind",
+"type": "uint"
+},
+"440": {
+"name": "pageId",
+"type": "Id"
+},
+"849": {
+"name": "shouldPublish",
+"type": "bool"
+},
+"196": {
+"name": "clip",
+"type": "bool"
+},
+"7": {
+"name": "width",
+"type": "double"
+},
+"8": {
+"name": "height",
+"type": "double"
+},
+"494": {
+"name": "styleId",
+"type": "Id"
+},
+"706": {
+"name": "fractionalWidth",
+"type": "double"
+},
+"707": {
+"name": "fractionalHeight",
+"type": "double"
+},
+"23": {
+"name": "blendModeValue",
+"type": "uint8"
+},
+"477": {
+"name": "isTargetOpaque",
+"type": "bool"
+},
+"129": {
+"name": "drawableFlags",
+"type": "uint16"
+},
+"13": {
+"name": "x",
+"type": "double"
+},
+"14": {
+"name": "y",
+"type": "double"
+},
+"176": {
+"name": "styleValue",
+"type": "uint"
+},
+"806": {
+"name": "computedLocalX",
+"type": "double"
+},
+"807": {
+"name": "computedLocalY",
+"type": "double"
+},
+"808": {
+"name": "computedWorldX",
+"type": "double"
+},
+"809": {
+"name": "computedWorldY",
+"type": "double"
+},
+"864": {
+"name": "computedRootX",
+"type": "double"
+},
+"865": {
+"name": "computedRootY",
+"type": "double"
+},
+"810": {
+"name": "computedWidth",
+"type": "double"
+},
+"811": {
+"name": "computedHeight",
+"type": "double"
+},
+"15": {
+"name": "rotation",
+"type": "double"
+},
+"16": {
+"name": "scaleX",
+"type": "double"
+},
+"17": {
+"name": "scaleY",
+"type": "double"
+},
+"244": {
+"name": "stageColor",
+"type": "Color"
+},
+"18": {
+"name": "opacity",
+"type": "double"
+},
+"3": {
+"name": "dependentIds",
+"type": "List<Id>"
+},
+"4": {
+"name": "name",
+"type": "String"
+},
+"544": {
+"name": "exportName",
+"type": "bool"
+},
+"5": {
+"name": "parentId",
+"type": "Id"
+},
+"6": {
+"name": "childOrder",
+"type": "FractionalIndex"
+},
+"130": {
+"name": "flags",
+"type": "uint"
+},
+"800": {
+"name": "listSource",
+"type": "Id"
+},
+"858": {
+"name": "artboardId",
+"type": "Id"
+},
+"859": {
+"name": "instanceWidth",
+"type": "double"
+},
+"860": {
+"name": "instanceHeight",
+"type": "double"
+},
+"856": {
+"name": "instanceWidthUnitsValue",
+"type": "uint"
+},
+"861": {
+"name": "instanceHeightUnitsValue",
+"type": "uint"
+},
+"862": {
+"name": "instanceWidthScaleType",
+"type": "uint"
+},
+"863": {
+"name": "instanceHeightScaleType",
+"type": "uint"
+},
+"934": {
+"name": "artboardId",
+"type": "Id"
+},
+"935": {
+"name": "viewModelId",
+"type": "Id"
+},
+"884": {
+"name": "type",
+"type": "uint"
+},
+"203": {
+"name": "name",
+"type": "String"
+},
+"209": {
+"name": "parentId",
+"type": "Id"
+},
+"882": {
+"name": "groupId",
+"type": "Id"
+},
+"205": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"883": {
+"name": "exportFlags",
+"type": "uint"
+},
+"473": {
+"name": "sampleRate",
+"type": "uint"
+},
+"474": {
+"name": "channels",
+"type": "uint"
+},
+"475": {
+"name": "durationSeconds",
+"type": "double"
+},
+"476": {
+"name": "formatValue",
+"type": "uint"
+},
+"426": {
+"name": "isCustom",
+"type": "bool"
+},
+"527": {
+"name": "exportFormatValue",
+"type": "uint"
+},
+"528": {
+"name": "exportQualityValue",
+"type": "uint"
+},
+"530": {
+"name": "volume",
+"type": "double"
+},
+"204": {
+"name": "assetId",
+"type": "uint"
+},
+"211": {
+"name": "size",
+"type": "uint"
+},
+"358": {
+"name": "exportTypeValue",
+"type": "uint"
+},
+"359": {
+"name": "cdnUuid",
+"type": "Bytes"
+},
+"362": {
+"name": "cdnBaseUrl",
+"type": "String"
+},
+"801": {
+"name": "includeInExport",
+"type": "bool"
+},
+"525": {
+"name": "startSeconds",
+"type": "double"
+},
+"526": {
+"name": "endSeconds",
+"type": "double"
+},
+"408": {
+"name": "assetId",
+"type": "Id"
+},
+"478": {
+"name": "width",
+"type": "double"
+},
+"395": {
+"name": "trigger",
+"type": "callback"
+},
+"396": {
+"name": "x",
+"type": "double"
+},
+"397": {
+"name": "y",
+"type": "double"
+},
+"675": {
+"name": "offset",
+"type": "double"
+},
+"676": {
+"name": "normalized",
+"type": "bool"
+},
+"1042": {
+"name": "scriptEdgesVerifiedVersion",
+"type": "uint"
+},
+"1096": {
+"name": "layoutTransformMigrated",
+"type": "bool"
+},
+"543": {
+"name": "coreVersion",
+"type": "uint"
+},
+"43": {
+"name": "activeArtboardId",
+"type": "Id"
+},
+"44": {
+"name": "mainArtboardId",
+"type": "Id"
+},
+"45": {
+"name": "colorValue",
+"type": "Color"
+},
+"354": {
+"name": "animateColorValue",
+"type": "Color"
+},
+"135": {
+"name": "editorMode",
+"type": "uint"
+},
+"247": {
+"name": "treeMode",
+"type": "uint"
+},
+"886": {
+"name": "treeFlags",
+"type": "uint"
+},
+"258": {
+"name": "animationPanelSize",
+"type": "double"
+},
+"259": {
+"name": "hierarchyPanelSize",
+"type": "double"
+},
+"529": {
+"name": "leftFlyoutPanelSize",
+"type": "double"
+},
+"841": {
+"name": "scriptEditorWidthRatio",
+"type": "double"
+},
+"837": {
+"name": "scriptUtilityHeight",
+"type": "double"
+},
+"838": {
+"name": "scriptPanelFlags",
+"type": "uint"
+},
+"260": {
+"name": "stageX",
+"type": "double"
+},
+"261": {
+"name": "stageY",
+"type": "double"
+},
+"262": {
+"name": "stageZoom",
+"type": "double"
+},
+"263": {
+"name": "rulersEnabled",
+"type": "bool"
+},
+"264": {
+"name": "snappingEnabled",
+"type": "bool"
+},
+"265": {
+"name": "bonesEnabled",
+"type": "bool"
+},
+"379": {
+"name": "targetsEnabled",
+"type": "bool"
+},
+"351": {
+"name": "motionPathsEnabled",
+"type": "bool"
+},
+"355": {
+"name": "showFinalPlaybackEnabled",
+"type": "bool"
+},
+"374": {
+"name": "showModifierRange",
+"type": "bool"
+},
+"375": {
+"name": "showModifierRangeValues",
+"type": "bool"
+},
+"290": {
+"name": "toolbarOutputAction",
+"type": "uint"
+},
+"343": {
+"name": "defaultFontFamily",
+"type": "String"
+},
+"352": {
+"name": "isDefaultFontFamilyCustom",
+"type": "bool"
+},
+"344": {
+"name": "defaultFontStyle",
+"type": "String"
+},
+"345": {
+"name": "defaultFontSize",
+"type": "double"
+},
+"346": {
+"name": "defaultTextAlign",
+"type": "uint"
+},
+"347": {
+"name": "defaultTextOverflow",
+"type": "uint"
+},
+"348": {
+"name": "defaultTextHighlightTextRuns",
+"type": "bool"
+},
+"387": {
+"name": "defaultCollapseTags",
+"type": "bool"
+},
+"409": {
+"name": "snapToPixelEnabled",
+"type": "bool"
+},
+"421": {
+"name": "showRenderQueue",
+"type": "bool"
+},
+"534": {
+"name": "openFlyout",
+"type": "uint"
+},
+"540": {
+"name": "dependencyGraphState",
+"type": "uint"
+},
+"423": {
+"name": "showJoysticks",
+"type": "bool"
+},
+"424": {
+"name": "showEvents",
+"type": "bool"
+},
+"422": {
+"name": "showCollapsedElementsEnabled",
+"type": "bool"
+},
+"694": {
+"name": "showLayouts",
+"type": "bool"
+},
+"701": {
+"name": "enableLayoutAnimation",
+"type": "bool"
+},
+"425": {
+"name": "gizmoEnabled",
+"type": "bool"
+},
+"533": {
+"name": "showUserCursors",
+"type": "bool"
+},
+"695": {
+"name": "defaultInterpolationType",
+"type": "uint"
+},
+"696": {
+"name": "defaultInterpolatorId",
+"type": "Id"
+},
+"702": {
+"name": "collapseTextStyles",
+"type": "bool"
+},
+"787": {
+"name": "dataBindDesignActive",
+"type": "bool"
+},
+"813": {
+"name": "artboardPresetExpanders",
+"type": "uint"
+},
+"821": {
+"name": "assetPanelFilters",
+"type": "uint"
+},
+"827": {
+"name": "dataPanelFilters",
+"type": "uint"
+},
+"1097": {
+"name": "hierarchyPanelFilters",
+"type": "uint"
+},
+"825": {
+"name": "libraryPanelStateLibraryId",
+"type": "uint"
+},
+"828": {
+"name": "expandedAssets",
+"type": "List<Id>"
+},
+"829": {
+"name": "expandedDataComponents",
+"type": "List<Id>"
+},
+"830": {
+"name": "expandComputedTransform",
+"type": "bool"
+},
+"890": {
+"name": "hydrogenPanes",
+"type": "Bytes"
+},
+"915": {
+"name": "dataBindOptionsFlags",
+"type": "uint"
+},
+"928": {
+"name": "optimizationLevelValue",
+"type": "uint"
+},
+"929": {
+"name": "debugLevelValue",
+"type": "uint"
+},
+"958": {
+"name": "shaderOutputFlags",
+"type": "uint"
+},
+"950": {
+"name": "stackedPanels",
+"type": "Bytes"
+},
+"823": {
+"name": "propertyValue",
+"type": "Id"
+},
+"633": {
+"name": "dataBindId",
+"type": "Id"
+},
+"634": {
+"name": "propertyValue",
+"type": "bool"
+},
+"638": {
+"name": "propertyValue",
+"type": "Color"
+},
+"637": {
+"name": "propertyValue",
+"type": "Id"
+},
+"686": {
+"name": "propertyValue",
+"type": "uint"
+},
+"835": {
+"name": "propertyValue",
+"type": "Id"
+},
+"636": {
+"name": "propertyValue",
+"type": "double"
+},
+"635": {
+"name": "propertyValue",
+"type": "String"
+},
+"417": {
+"name": "resolution",
+"type": "double"
+},
+"418": {
+"name": "cacheFlags",
+"type": "uint"
+},
+"419": {
+"name": "cacheEnabled",
+"type": "bool"
+},
+"420": {
+"name": "dither",
+"type": "bool"
+},
+"166": {
+"name": "value",
+"type": "double"
+},
+"170": {
+"name": "blendStateId",
+"type": "Id"
+},
+"165": {
+"name": "animationId",
+"type": "Id"
+},
+"169": {
+"name": "animationOrder",
+"type": "FractionalIndex"
+},
+"168": {
+"name": "inputId",
+"type": "Id"
+},
+"297": {
+"name": "mixValue",
+"type": "double"
+},
+"736": {
+"name": "bindablePropertyId",
+"type": "Id"
+},
+"298": {
+"name": "blendSource",
+"type": "uint"
+},
+"167": {
+"name": "inputId",
+"type": "Id"
+},
+"737": {
+"name": "bindablePropertyId",
+"type": "Id"
+},
+"171": {
+"name": "exitBlendAnimationId",
+"type": "Id"
+},
+"150": {
+"name": "stateFromId",
+"type": "Id"
+},
+"151": {
+"name": "stateToId",
+"type": "Id"
+},
+"152": {
+"name": "flags",
+"type": "uint"
+},
+"158": {
+"name": "duration",
+"type": "uint"
+},
+"159": {
+"name": "transitionOrder",
+"type": "FractionalIndex"
+},
+"160": {
+"name": "exitTime",
+"type": "uint"
+},
+"349": {
+"name": "interpolationType",
+"type": "uint"
+},
+"350": {
+"name": "interpolatorId",
+"type": "Id"
+},
+"537": {
+"name": "randomWeight",
+"type": "uint"
+},
+"1044": {
+"name": "formatExtension",
+"type": "String"
+},
+"89": {
+"name": "length",
+"type": "double"
+},
+"1088": {
+"name": "spineBytes",
+"type": "Bytes"
+},
+"1089": {
+"name": "widthBytes",
+"type": "Bytes"
+},
+"1090": {
+"name": "brushSize",
+"type": "double"
+},
+"1091": {
+"name": "smoothing",
+"type": "double"
+},
+"1092": {
+"name": "strokeKindValue",
+"type": "uint"
+},
+"1093": {
+"name": "nibValue",
+"type": "uint"
+},
+"731": {
+"name": "constraintId",
+"type": "Id"
+},
+"293": {
+"name": "fileId",
+"type": "uint"
+},
+"294": {
+"name": "projectId",
+"type": "uint"
+},
+"295": {
+"name": "clipboardTypeValue",
+"type": "uint"
+},
+"92": {
+"name": "sourceId",
+"type": "Id"
+},
+"93": {
+"name": "fillRule",
+"type": "uint8"
+},
+"94": {
+"name": "isVisible",
+"type": "bool"
+},
+"900": {
+"name": "codeFileId",
+"type": "Id"
+},
+"913": {
+"name": "diffString",
+"type": "String"
+},
+"909": {
+"name": "sourceString",
+"type": "String"
+},
+"959": {
+"name": "codeFileTypeValue",
+"type": "uint"
+},
+"896": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"897": {
+"name": "unit",
+"type": "uint"
+},
+"898": {
+"name": "lineId",
+"type": "Id"
+},
+"899": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"967": {
+"name": "text",
+"type": "String"
+},
+"968": {
+"name": "lineId",
+"type": "Id"
+},
+"969": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"853": {
+"name": "artboardId",
+"type": "Id"
+},
+"885": {
+"name": "libraryId",
+"type": "uint"
+},
+"1040": {
+"name": "originX",
+"type": "double"
+},
+"1041": {
+"name": "originY",
+"type": "double"
+},
+"215": {
+"name": "u",
+"type": "double"
+},
+"216": {
+"name": "v",
+"type": "double"
+},
+"24": {
+"name": "x",
+"type": "double"
+},
+"25": {
+"name": "y",
+"type": "double"
+},
+"79": {
+"name": "rotation",
+"type": "double"
+},
+"80": {
+"name": "inDistance",
+"type": "double"
+},
+"81": {
+"name": "outDistance",
+"type": "double"
+},
+"84": {
+"name": "inRotation",
+"type": "double"
+},
+"85": {
+"name": "inDistance",
+"type": "double"
+},
+"86": {
+"name": "outRotation",
+"type": "double"
+},
+"87": {
+"name": "outDistance",
+"type": "double"
+},
+"63": {
+"name": "x1",
+"type": "double"
+},
+"64": {
+"name": "y1",
+"type": "double"
+},
+"65": {
+"name": "x2",
+"type": "double"
+},
+"66": {
+"name": "y2",
+"type": "double"
+},
+"337": {
+"name": "x1",
+"type": "double"
+},
+"338": {
+"name": "y1",
+"type": "double"
+},
+"339": {
+"name": "x2",
+"type": "double"
+},
+"340": {
+"name": "y2",
+"type": "double"
+},
+"82": {
+"name": "rotation",
+"type": "double"
+},
+"83": {
+"name": "distance",
+"type": "double"
+},
+"732": {
+"name": "autoBezier",
+"type": "bool"
+},
+"733": {
+"name": "autoBezierCoefficient",
+"type": "double"
+},
+"110": {
+"name": "inValues",
+"type": "uint"
+},
+"111": {
+"name": "inIndices",
+"type": "uint"
+},
+"112": {
+"name": "outValues",
+"type": "uint"
+},
+"113": {
+"name": "outIndices",
+"type": "uint"
+},
+"102": {
+"name": "values",
+"type": "uint"
+},
+"103": {
+"name": "indices",
+"type": "uint"
+},
+"245": {
+"name": "propertyValue",
+"type": "bool"
+},
+"836": {
+"name": "propertyValue",
+"type": "Color"
+},
+"872": {
+"name": "propertyValue",
+"type": "Id"
+},
+"873": {
+"name": "enumId",
+"type": "Id"
+},
+"243": {
+"name": "propertyValue",
+"type": "double"
+},
+"246": {
+"name": "propertyValue",
+"type": "String"
+},
+"780": {
+"name": "fieldHeight",
+"type": "double"
+},
+"869": {
+"name": "fire",
+"type": "callback"
+},
+"870": {
+"name": "propertyValue",
+"type": "uint"
+},
+"692": {
+"name": "length",
+"type": "double"
+},
+"693": {
+"name": "lengthIsPercentage",
+"type": "bool"
+},
+"690": {
+"name": "offset",
+"type": "double"
+},
+"691": {
+"name": "offsetIsPercentage",
+"type": "bool"
+},
+"585": {
+"name": "targetId",
+"type": "Id"
+},
+"586": {
+"name": "propertyKey",
+"type": "uint"
+},
+"587": {
+"name": "flags",
+"type": "uint"
+},
+"660": {
+"name": "converterId",
+"type": "Id"
+},
+"588": {
+"name": "sourcePathIds",
+"type": "List<Id>"
+},
+"920": {
+"name": "path",
+"type": "List<Id>"
+},
+"921": {
+"name": "isRelative",
+"type": "bool"
+},
+"661": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"662": {
+"name": "name",
+"type": "String"
+},
+"842": {
+"name": "parentId",
+"type": "Id"
+},
+"878": {
+"name": "groupId",
+"type": "Id"
+},
+"845": {
+"name": "displayOrder",
+"type": "FractionalIndex"
+},
+"887": {
+"name": "randomModeValue",
+"type": "uint"
+},
+"678": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"679": {
+"name": "converterId",
+"type": "Id"
+},
+"680": {
+"name": "groupId",
+"type": "Id"
+},
+"757": {
+"name": "interpolationType",
+"type": "uint"
+},
+"758": {
+"name": "interpolatorId",
+"type": "Id"
+},
+"756": {
+"name": "duration",
+"type": "double"
+},
+"816": {
+"name": "viewModelId",
+"type": "Id"
+},
+"682": {
+"name": "operationType",
+"type": "uint"
+},
+"681": {
+"name": "operationValue",
+"type": "double"
+},
+"711": {
+"name": "sourcePathIds",
+"type": "List<Id>"
+},
+"713": {
+"name": "interpolationType",
+"type": "uint"
+},
+"714": {
+"name": "interpolatorId",
+"type": "Id"
+},
+"715": {
+"name": "flags",
+"type": "uint"
+},
+"716": {
+"name": "minInput",
+"type": "double"
+},
+"717": {
+"name": "maxInput",
+"type": "double"
+},
+"718": {
+"name": "minOutput",
+"type": "double"
+},
+"719": {
+"name": "maxOutput",
+"type": "double"
+},
+"669": {
+"name": "decimals",
+"type": "uint"
+},
+"743": {
+"name": "length",
+"type": "uint"
+},
+"744": {
+"name": "text",
+"type": "String"
+},
+"745": {
+"name": "padType",
+"type": "uint"
+},
+"746": {
+"name": "trimType",
+"type": "uint"
+},
+"764": {
+"name": "flags",
+"type": "uint"
+},
+"765": {
+"name": "decimals",
+"type": "uint"
+},
+"766": {
+"name": "colorFormat",
+"type": "String"
+},
+"570": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"571": {
+"name": "splitKeyValues",
+"type": "bool"
+},
+"572": {
+"name": "name",
+"type": "String"
+},
+"709": {
+"name": "enumType",
+"type": "uint"
+},
+"578": {
+"name": "key",
+"type": "String"
+},
+"579": {
+"name": "value",
+"type": "String"
+},
+"580": {
+"name": "enumId",
+"type": "Id"
+},
+"581": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"843": {
+"name": "name",
+"type": "String"
+},
+"844": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"881": {
+"name": "name",
+"type": "String"
+},
+"879": {
+"name": "type",
+"type": "uint"
+},
+"880": {
+"name": "libraryId",
+"type": "uint"
+},
+"177": {
+"name": "distance",
+"type": "double"
+},
+"178": {
+"name": "modeValue",
+"type": "uint"
+},
+"173": {
+"name": "targetId",
+"type": "Id"
+},
+"172": {
+"name": "strength",
+"type": "double"
+},
+"121": {
+"name": "drawTargetId",
+"type": "Id"
+},
+"119": {
+"name": "drawableId",
+"type": "Id"
+},
+"120": {
+"name": "placementValue",
+"type": "uint"
+},
+"405": {
+"name": "easingValue",
+"type": "uint"
+},
+"406": {
+"name": "amplitude",
+"type": "double"
+},
+"407": {
+"name": "period",
+"type": "double"
+},
+"728": {
+"name": "friction",
+"type": "double"
+},
+"729": {
+"name": "speedMultiplier",
+"type": "double"
+},
+"730": {
+"name": "elasticFactor",
+"type": "double"
+},
+"20": {
+"name": "width",
+"type": "double"
+},
+"21": {
+"name": "height",
+"type": "double"
+},
+"123": {
+"name": "originX",
+"type": "double"
+},
+"124": {
+"name": "originY",
+"type": "double"
+},
+"128": {
+"name": "pathFlags",
+"type": "uint"
+},
+"770": {
+"name": "isHole",
+"type": "bool"
+},
+"748": {
+"name": "spaceValue",
+"type": "uint"
+},
+"749": {
+"name": "strength",
+"type": "double"
+},
+"750": {
+"name": "offsetX",
+"type": "double"
+},
+"751": {
+"name": "offsetY",
+"type": "double"
+},
+"752": {
+"name": "inner",
+"type": "bool"
+},
+"755": {
+"name": "isEnabled",
+"type": "bool"
+},
+"213": {
+"name": "assetId",
+"type": "Id"
+},
+"212": {
+"name": "bytes",
+"type": "Bytes"
+},
+"911": {
+"name": "signature",
+"type": "Bytes"
+},
+"40": {
+"name": "fillRule",
+"type": "uint8"
+},
+"41": {
+"name": "isVisible",
+"type": "bool"
+},
+"710": {
+"name": "version",
+"type": "uint"
+},
+"747": {
+"name": "blendModeValue",
+"type": "uint"
+},
+"226": {
+"name": "listenerId",
+"type": "Id"
+},
+"980": {
+"name": "flags",
+"type": "uint"
+},
+"230": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"952": {
+"name": "targetId",
+"type": "Id"
+},
+"1011": {
+"name": "traversalKind",
+"type": "uint"
+},
+"1033": {
+"name": "focusFlags",
+"type": "uint"
+},
+"953": {
+"name": "canFocus",
+"type": "bool"
+},
+"954": {
+"name": "canTouch",
+"type": "bool"
+},
+"955": {
+"name": "canTraverse",
+"type": "bool"
+},
+"956": {
+"name": "edgeBehaviorValue",
+"type": "uint"
+},
+"363": {
+"name": "distance",
+"type": "double"
+},
+"364": {
+"name": "orient",
+"type": "bool"
+},
+"365": {
+"name": "offset",
+"type": "bool"
+},
+"179": {
+"name": "sourceSpaceValue",
+"type": "uint"
+},
+"180": {
+"name": "destSpaceValue",
+"type": "uint"
+},
+"309": {
+"name": "isCustom",
+"type": "bool"
+},
+"360": {
+"name": "includeTypeValue",
+"type": "uint"
+},
+"361": {
+"name": "includedUnicodes",
+"type": "String"
+},
+"219": {
+"name": "fromId",
+"type": "Id"
+},
+"220": {
+"name": "toId",
+"type": "Id"
+},
+"772": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"773": {
+"name": "formulaId",
+"type": "Id"
+},
+"774": {
+"name": "functionId",
+"type": "Id"
+},
+"776": {
+"name": "functionType",
+"type": "uint"
+},
+"775": {
+"name": "operationType",
+"type": "uint"
+},
+"777": {
+"name": "operationValue",
+"type": "double"
+},
+"1021": {
+"name": "kind",
+"type": "uint"
+},
+"1018": {
+"name": "mapping",
+"type": "uint"
+},
+"1019": {
+"name": "inputIndex",
+"type": "uint"
+},
+"1020": {
+"name": "buttonPhase",
+"type": "uint"
+},
+"970": {
+"name": "targetId",
+"type": "Id"
+},
+"38": {
+"name": "colorValue",
+"type": "Color"
+},
+"39": {
+"name": "position",
+"type": "double"
+},
+"118": {
+"name": "colorRed",
+"type": "uint"
+},
+"136": {
+"name": "colorGreen",
+"type": "uint"
+},
+"210": {
+"name": "colorBlue",
+"type": "uint"
+},
+"218": {
+"name": "colorAlpha",
+"type": "uint"
+},
+"1047": {
+"name": "gridColumn",
+"type": "int16"
+},
+"1048": {
+"name": "gridRow",
+"type": "int16"
+},
+"1049": {
+"name": "gridColumnSpan",
+"type": "uint16"
+},
+"1050": {
+"name": "gridRowSpan",
+"type": "uint16"
+},
+"1063": {
+"name": "trackValue",
+"type": "double"
+},
+"1065": {
+"name": "trackMaxValue",
+"type": "double"
+},
+"1061": {
+"name": "collection",
+"type": "uint8"
+},
+"1062": {
+"name": "trackType",
+"type": "uint8"
+},
+"1064": {
+"name": "trackMaxType",
+"type": "uint8"
+},
+"917": {
+"name": "x",
+"type": "double"
+},
+"918": {
+"name": "y",
+"type": "double"
+},
+"1081": {
+"name": "guideTypeValue",
+"type": "uint"
+},
+"1082": {
+"name": "color",
+"type": "Color"
+},
+"1083": {
+"name": "gridSize",
+"type": "double"
+},
+"1084": {
+"name": "count",
+"type": "uint"
+},
+"1085": {
+"name": "alignmentValue",
+"type": "uint"
+},
+"1086": {
+"name": "guideWidth",
+"type": "double"
+},
+"1079": {
+"name": "offset",
+"type": "double"
+},
+"1080": {
+"name": "gutter",
+"type": "double"
+},
+"1051": {
+"name": "margin",
+"type": "double"
+},
+"1053": {
+"name": "guideComponentId",
+"type": "Id"
+},
+"1052": {
+"name": "guideComponentId",
+"type": "Id"
+},
+"174": {
+"name": "invertDirection",
+"type": "bool"
+},
+"175": {
+"name": "parentBoneCount",
+"type": "uint"
+},
+"206": {
+"name": "assetId",
+"type": "Id"
+},
+"380": {
+"name": "originX",
+"type": "double"
+},
+"381": {
+"name": "originY",
+"type": "double"
+},
+"974": {
+"name": "fit",
+"type": "uint"
+},
+"975": {
+"name": "alignmentX",
+"type": "double"
+},
+"976": {
+"name": "alignmentY",
+"type": "double"
+},
+"1076": {
+"name": "samplerFilter",
+"type": "uint8"
+},
+"1077": {
+"name": "samplerWrapX",
+"type": "uint8"
+},
+"1078": {
+"name": "samplerWrapY",
+"type": "uint8"
+},
+"241": {
+"name": "format",
+"type": "uint"
+},
+"242": {
+"name": "quality",
+"type": "double"
+},
+"1013": {
+"name": "mips",
+"type": "bool"
+},
+"1030": {
+"name": "astcBlockSize",
+"type": "uint"
+},
+"1073": {
+"name": "samplerFilter",
+"type": "uint8"
+},
+"1074": {
+"name": "samplerWrapX",
+"type": "uint8"
+},
+"1075": {
+"name": "samplerWrapY",
+"type": "uint8"
+},
+"207": {
+"name": "height",
+"type": "double"
+},
+"208": {
+"name": "width",
+"type": "double"
+},
+"299": {
+"name": "x",
+"type": "double"
+},
+"300": {
+"name": "y",
+"type": "double"
+},
+"303": {
+"name": "posX",
+"type": "double"
+},
+"304": {
+"name": "posY",
+"type": "double"
+},
+"307": {
+"name": "originX",
+"type": "double"
+},
+"308": {
+"name": "originY",
+"type": "double"
+},
+"305": {
+"name": "width",
+"type": "double"
+},
+"306": {
+"name": "height",
+"type": "double"
+},
+"301": {
+"name": "xId",
+"type": "Id"
+},
+"302": {
+"name": "yId",
+"type": "Id"
+},
+"312": {
+"name": "joystickFlags",
+"type": "uint"
+},
+"314": {
+"name": "joystickOrder",
+"type": "uint"
+},
+"313": {
+"name": "handleSourceId",
+"type": "Id"
+},
+"181": {
+"name": "value",
+"type": "bool"
+},
+"68": {
+"name": "interpolationType",
+"type": "uint"
+},
+"69": {
+"name": "interpolatorId",
+"type": "Id"
+},
+"72": {
+"name": "keyedPropertyId",
+"type": "Id"
+},
+"67": {
+"name": "frame",
+"type": "uint"
+},
+"88": {
+"name": "value",
+"type": "Color"
+},
+"70": {
+"name": "value",
+"type": "double"
+},
+"122": {
+"name": "value",
+"type": "Id"
+},
+"1068": {
+"name": "value",
+"type": "int"
+},
+"280": {
+"name": "value",
+"type": "String"
+},
+"631": {
+"name": "value",
+"type": "uint"
+},
+"971": {
+"name": "keyType",
+"type": "uint"
+},
+"972": {
+"name": "keyPhase",
+"type": "uint"
+},
+"973": {
+"name": "modifiers",
+"type": "uint"
+},
+"51": {
+"name": "objectId",
+"type": "Id"
+},
+"52": {
+"name": "animationId",
+"type": "Id"
+},
+"71": {
+"name": "keyedObjectId",
+"type": "Id"
+},
+"53": {
+"name": "propertyKey",
+"type": "uint"
+},
+"233": {
+"name": "layer",
+"type": "uint"
+},
+"234": {
+"name": "x",
+"type": "double"
+},
+"235": {
+"name": "y",
+"type": "double"
+},
+"498": {
+"name": "gapHorizontal",
+"type": "double"
+},
+"499": {
+"name": "gapVertical",
+"type": "double"
+},
+"504": {
+"name": "borderLeft",
+"type": "double"
+},
+"505": {
+"name": "borderRight",
+"type": "double"
+},
+"506": {
+"name": "borderTop",
+"type": "double"
+},
+"507": {
+"name": "borderBottom",
+"type": "double"
+},
+"508": {
+"name": "marginLeft",
+"type": "double"
+},
+"509": {
+"name": "marginRight",
+"type": "double"
+},
+"510": {
+"name": "marginTop",
+"type": "double"
+},
+"511": {
+"name": "marginBottom",
+"type": "double"
+},
+"512": {
+"name": "paddingLeft",
+"type": "double"
+},
+"513": {
+"name": "paddingRight",
+"type": "double"
+},
+"514": {
+"name": "paddingTop",
+"type": "double"
+},
+"515": {
+"name": "paddingBottom",
+"type": "double"
+},
+"516": {
+"name": "positionLeft",
+"type": "double"
+},
+"517": {
+"name": "positionRight",
+"type": "double"
+},
+"518": {
+"name": "positionTop",
+"type": "double"
+},
+"519": {
+"name": "positionBottom",
+"type": "double"
+},
+"621": {
+"name": "positionLeftUnitsValue",
+"type": "uint8"
+},
+"622": {
+"name": "positionRightUnitsValue",
+"type": "uint8"
+},
+"623": {
+"name": "positionTopUnitsValue",
+"type": "uint8"
+},
+"624": {
+"name": "positionBottomUnitsValue",
+"type": "uint8"
+},
+"523": {
+"name": "flexBasis",
+"type": "double"
+},
+"524": {
+"name": "aspectRatio",
+"type": "double"
+},
+"591": {
+"name": "interpolatorId",
+"type": "Id"
+},
+"592": {
+"name": "interpolationTime",
+"type": "double"
+},
+"705": {
+"name": "flexBasisUnitsValue",
+"type": "uint8"
+},
+"545": {
+"name": "edgeConstraints",
+"type": "uint8"
+},
+"632": {
+"name": "layoutAlignmentType",
+"type": "uint8"
+},
+"589": {
+"name": "animationStyleType",
+"type": "uint8"
+},
+"590": {
+"name": "interpolationType",
+"type": "uint8"
+},
+"597": {
+"name": "positionTypeValue",
+"type": "uint8"
+},
+"598": {
+"name": "flexDirectionValue",
+"type": "uint8"
+},
+"599": {
+"name": "directionValue",
+"type": "uint8"
+},
+"600": {
+"name": "alignContentValue",
+"type": "uint8"
+},
+"601": {
+"name": "alignItemsValue",
+"type": "uint8"
+},
+"603": {
+"name": "justifyContentValue",
+"type": "uint8"
+},
+"604": {
+"name": "flexWrapValue",
+"type": "uint8"
+},
+"605": {
+"name": "overflowValue",
+"type": "uint8"
+},
+"606": {
+"name": "intrinsicallySizedValue",
+"type": "bool"
+},
+"609": {
+"name": "borderLeftUnitsValue",
+"type": "uint8"
+},
+"610": {
+"name": "borderRightUnitsValue",
+"type": "uint8"
+},
+"611": {
+"name": "borderTopUnitsValue",
+"type": "uint8"
+},
+"612": {
+"name": "borderBottomUnitsValue",
+"type": "uint8"
+},
+"613": {
+"name": "marginLeftUnitsValue",
+"type": "uint8"
+},
+"614": {
+"name": "marginRightUnitsValue",
+"type": "uint8"
+},
+"615": {
+"name": "marginTopUnitsValue",
+"type": "uint8"
+},
+"616": {
+"name": "marginBottomUnitsValue",
+"type": "uint8"
+},
+"617": {
+"name": "paddingLeftUnitsValue",
+"type": "uint8"
+},
+"618": {
+"name": "paddingRightUnitsValue",
+"type": "uint8"
+},
+"619": {
+"name": "paddingTopUnitsValue",
+"type": "uint8"
+},
+"620": {
+"name": "paddingBottomUnitsValue",
+"type": "uint8"
+},
+"625": {
+"name": "gapHorizontalUnitsValue",
+"type": "uint8"
+},
+"626": {
+"name": "gapVerticalUnitsValue",
+"type": "uint8"
+},
+"1045": {
+"name": "justifyItemsValue",
+"type": "uint8"
+},
+"1059": {
+"name": "layoutTypeValue",
+"type": "uint8"
+},
+"639": {
+"name": "linkCornerRadius",
+"type": "bool"
+},
+"640": {
+"name": "cornerRadiusTL",
+"type": "double"
+},
+"641": {
+"name": "cornerRadiusTR",
+"type": "double"
+},
+"642": {
+"name": "cornerRadiusBL",
+"type": "double"
+},
+"643": {
+"name": "cornerRadiusBR",
+"type": "double"
+},
+"502": {
+"name": "minWidth",
+"type": "double"
+},
+"500": {
+"name": "maxWidth",
+"type": "double"
+},
+"503": {
+"name": "minHeight",
+"type": "double"
+},
+"501": {
+"name": "maxHeight",
+"type": "double"
+},
+"627": {
+"name": "minWidthUnitsValue",
+"type": "uint8"
+},
+"629": {
+"name": "maxWidthUnitsValue",
+"type": "uint8"
+},
+"628": {
+"name": "minHeightUnitsValue",
+"type": "uint8"
+},
+"630": {
+"name": "maxHeightUnitsValue",
+"type": "uint8"
+},
+"655": {
+"name": "layoutWidthScaleType",
+"type": "uint8"
+},
+"656": {
+"name": "layoutHeightScaleType",
+"type": "uint8"
+},
+"607": {
+"name": "widthUnitsValue",
+"type": "uint8"
+},
+"608": {
+"name": "heightUnitsValue",
+"type": "uint8"
+},
+"1046": {
+"name": "justifySelfValue",
+"type": "uint8"
+},
+"596": {
+"name": "displayValue",
+"type": "uint8"
+},
+"520": {
+"name": "flex",
+"type": "double"
+},
+"521": {
+"name": "flexGrow",
+"type": "double"
+},
+"522": {
+"name": "flexShrink",
+"type": "double"
+},
+"602": {
+"name": "alignSelfValue",
+"type": "uint8"
+},
+"1066": {
+"name": "width",
+"type": "double"
+},
+"1067": {
+"name": "height",
+"type": "double"
+},
+"1057": {
+"name": "fractionalWidth",
+"type": "double"
+},
+"1058": {
+"name": "fractionalHeight",
+"type": "double"
+},
+"793": {
+"name": "assetId",
+"type": "Id"
+},
+"794": {
+"name": "name",
+"type": "String"
+},
+"805": {
+"name": "componentId",
+"type": "Id"
+},
+"798": {
+"name": "libraryId",
+"type": "uint64"
+},
+"799": {
+"name": "libraryVersionId",
+"type": "uint64"
+},
+"910": {
+"name": "assetId",
+"type": "Id"
+},
+"812": {
+"name": "assetId",
+"type": "Id"
+},
+"936": {
+"name": "artboardId",
+"type": "Id"
+},
+"937": {
+"name": "name",
+"type": "String"
+},
+"833": {
+"name": "libraryId",
+"type": "uint"
+},
+"834": {
+"name": "libraryVersionId",
+"type": "uint"
+},
+"820": {
+"name": "assetId",
+"type": "Id"
+},
+"563": {
+"name": "viewModelOrder",
+"type": "FractionalIndex"
+},
+"564": {
+"name": "defaultInstanceId",
+"type": "Id"
+},
+"741": {
+"name": "editingInstanceId",
+"type": "Id"
+},
+"981": {
+"name": "viewModelType",
+"type": "uint"
+},
+"557": {
+"name": "name",
+"type": "String"
+},
+"558": {
+"name": "viewModelId",
+"type": "Id"
+},
+"559": {
+"name": "propertyOrder",
+"type": "FractionalIndex"
+},
+"875": {
+"name": "symbolTypeValue",
+"type": "uint8"
+},
+"957": {
+"name": "componentProps",
+"type": "uint8"
+},
+"1012": {
+"name": "displayName",
+"type": "String"
+},
+"574": {
+"name": "enumId",
+"type": "Id"
+},
+"708": {
+"name": "enumType",
+"type": "uint"
+},
+"735": {
+"name": "enumId",
+"type": "Id"
+},
+"565": {
+"name": "viewModelReferenceId",
+"type": "Id"
+},
+"56": {
+"name": "fps",
+"type": "uint"
+},
+"57": {
+"name": "duration",
+"type": "uint"
+},
+"58": {
+"name": "speed",
+"type": "double"
+},
+"59": {
+"name": "loopValue",
+"type": "uint"
+},
+"60": {
+"name": "workStart",
+"type": "uint"
+},
+"61": {
+"name": "workEnd",
+"type": "uint"
+},
+"62": {
+"name": "enableWorkArea",
+"type": "bool"
+},
+"132": {
+"name": "playhead",
+"type": "uint"
+},
+"133": {
+"name": "viewStart",
+"type": "uint"
+},
+"134": {
+"name": "viewEnd",
+"type": "uint"
+},
+"256": {
+"name": "scrollOffset",
+"type": "double"
+},
+"266": {
+"name": "expandedComponents",
+"type": "List<Id>"
+},
+"275": {
+"name": "timelineMode",
+"type": "uint"
+},
+"278": {
+"name": "showSelected",
+"type": "bool"
+},
+"376": {
+"name": "quantize",
+"type": "bool"
+},
+"531": {
+"name": "displayOptions",
+"type": "uint"
+},
+"532": {
+"name": "keyedTreePanelSize",
+"type": "double"
+},
+"1017": {
+"name": "customKeyedComponentsOrder",
+"type": "List<Id>"
+},
+"1031": {
+"name": "interpolationPanelOpen",
+"type": "bool"
+},
+"1032": {
+"name": "interpolationPanelSize",
+"type": "double"
+},
+"42": {
+"name": "startX",
+"type": "double"
+},
+"33": {
+"name": "startY",
+"type": "double"
+},
+"34": {
+"name": "endX",
+"type": "double"
+},
+"35": {
+"name": "endY",
+"type": "double"
+},
+"46": {
+"name": "opacity",
+"type": "double"
+},
+"888": {
+"name": "distanceEnd",
+"type": "double"
+},
+"889": {
+"name": "distanceOffset",
+"type": "double"
+},
+"874": {
+"name": "listSource",
+"type": "Id"
+},
+"32": {
+"name": "isClosed",
+"type": "bool"
+},
+"753": {
+"name": "isClockwise",
+"type": "bool"
+},
+"240": {
+"name": "targetId",
+"type": "Id"
+},
+"541": {
+"name": "preserveOffset",
+"type": "bool"
+},
+"228": {
+"name": "value",
+"type": "uint"
+},
+"227": {
+"name": "inputId",
+"type": "Id"
+},
+"400": {
+"name": "nestedInputId",
+"type": "Id"
+},
+"389": {
+"name": "eventId",
+"type": "Id"
+},
+"965": {
+"name": "listenerTypeValue",
+"type": "uint"
+},
+"961": {
+"name": "listenerId",
+"type": "Id"
+},
+"962": {
+"name": "eventId",
+"type": "Id"
+},
+"963": {
+"name": "viewModelPathIds",
+"type": "List<Id>"
+},
+"964": {
+"name": "isDataBindPathRelative",
+"type": "bool"
+},
+"229": {
+"name": "value",
+"type": "double"
+},
+"657": {
+"name": "bindablePropertyId",
+"type": "Id"
+},
+"658": {
+"name": "fromViewModelProperty",
+"type": "bool"
+},
+"659": {
+"name": "fromDataBindId",
+"type": "Id"
+},
+"902": {
+"name": "startLineIndex",
+"type": "FractionalIndex"
+},
+"903": {
+"name": "startCodePointIndex",
+"type": "FractionalIndex"
+},
+"904": {
+"name": "endLineIndex",
+"type": "FractionalIndex"
+},
+"905": {
+"name": "endCodePointIndex",
+"type": "FractionalIndex"
+},
+"1100": {
+"name": "name",
+"type": "String"
+},
+"1101": {
+"name": "objects",
+"type": "List<Id>"
+},
+"217": {
+"name": "isClosed",
+"type": "bool"
+},
+"214": {
+"name": "editingModeValue",
+"type": "uint"
+},
+"223": {
+"name": "triangleIndexBytes",
+"type": "Bytes"
+},
+"697": {
+"name": "initialWidth",
+"type": "double"
+},
+"698": {
+"name": "initialHeight",
+"type": "double"
+},
+"699": {
+"name": "width",
+"type": "double"
+},
+"700": {
+"name": "height",
+"type": "double"
+},
+"670": {
+"name": "patchX",
+"type": "uint"
+},
+"671": {
+"name": "patchY",
+"type": "uint"
+},
+"672": {
+"name": "patchIndex",
+"type": "uint"
+},
+"673": {
+"name": "style",
+"type": "uint"
+},
+"197": {
+"name": "artboardId",
+"type": "Id"
+},
+"582": {
+"name": "dataBindPathIds",
+"type": "List<Id>"
+},
+"916": {
+"name": "isDataBindPathRelative",
+"type": "bool"
+},
+"895": {
+"name": "isPaused",
+"type": "bool"
+},
+"907": {
+"name": "speed",
+"type": "double"
+},
+"908": {
+"name": "quantize",
+"type": "double"
+},
+"1014": {
+"name": "isStateful",
+"type": "bool"
+},
+"663": {
+"name": "instanceWidth",
+"type": "double"
+},
+"664": {
+"name": "instanceHeight",
+"type": "double"
+},
+"665": {
+"name": "instanceWidthUnitsValue",
+"type": "uint"
+},
+"666": {
+"name": "instanceHeightUnitsValue",
+"type": "uint"
+},
+"667": {
+"name": "instanceWidthScaleType",
+"type": "uint"
+},
+"668": {
+"name": "instanceHeightScaleType",
+"type": "uint"
+},
+"538": {
+"name": "fit",
+"type": "uint8"
+},
+"1098": {
+"name": "fitToLayoutParent",
+"type": "bool"
+},
+"644": {
+"name": "alignmentX",
+"type": "double"
+},
+"645": {
+"name": "alignmentY",
+"type": "double"
+},
+"238": {
+"name": "nestedValue",
+"type": "bool"
+},
+"237": {
+"name": "inputId",
+"type": "Id"
+},
+"239": {
+"name": "nestedValue",
+"type": "double"
+},
+"202": {
+"name": "time",
+"type": "double"
+},
+"200": {
+"name": "mix",
+"type": "double"
+},
+"198": {
+"name": "animationId",
+"type": "Id"
+},
+"199": {
+"name": "speed",
+"type": "double"
+},
+"201": {
+"name": "isPlaying",
+"type": "bool"
+},
+"401": {
+"name": "fire",
+"type": "callback"
+},
+"248": {
+"name": "url",
+"type": "String"
+},
+"249": {
+"name": "targetValue",
+"type": "uint"
+},
+"441": {
+"name": "name",
+"type": "String"
+},
+"442": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"443": {
+"name": "colorValue",
+"type": "Color"
+},
+"444": {
+"name": "animateColorValue",
+"type": "Color"
+},
+"445": {
+"name": "activeArtboardId",
+"type": "Id"
+},
+"415": {
+"name": "imageAssetId",
+"type": "Id"
+},
+"269": {
+"name": "imageSamplerFilter",
+"type": "uint8"
+},
+"270": {
+"name": "imageSamplerWrapX",
+"type": "uint8"
+},
+"271": {
+"name": "imageSamplerWrapY",
+"type": "uint8"
+},
+"416": {
+"name": "imageScaleX",
+"type": "double"
+},
+"368": {
+"name": "imageScaleY",
+"type": "double"
+},
+"369": {
+"name": "imageOffsetX",
+"type": "double"
+},
+"410": {
+"name": "imageOffsetY",
+"type": "double"
+},
+"411": {
+"name": "imageRotation",
+"type": "double"
+},
+"412": {
+"name": "imageSizeMode",
+"type": "uint8"
+},
+"413": {
+"name": "isModulated",
+"type": "bool"
+},
+"74": {
+"name": "editingModeValue",
+"type": "uint"
+},
+"125": {
+"name": "points",
+"type": "uint"
+},
+"126": {
+"name": "cornerRadius",
+"type": "double"
+},
+"939": {
+"name": "deviceName",
+"type": "String"
+},
+"940": {
+"name": "deviceModel",
+"type": "String"
+},
+"941": {
+"name": "deviceOS",
+"type": "String"
+},
+"942": {
+"name": "deviceId",
+"type": "String"
+},
+"943": {
+"name": "timestamp",
+"type": "uint"
+},
+"164": {
+"name": "linkCornerRadius",
+"type": "bool"
+},
+"31": {
+"name": "cornerRadiusTL",
+"type": "double"
+},
+"161": {
+"name": "cornerRadiusTR",
+"type": "double"
+},
+"162": {
+"name": "cornerRadiusBL",
+"type": "double"
+},
+"163": {
+"name": "cornerRadiusBR",
+"type": "double"
+},
+"427": {
+"name": "name",
+"type": "String"
+},
+"428": {
+"name": "artboardId",
+"type": "Id"
+},
+"429": {
+"name": "mode",
+"type": "String"
+},
+"430": {
+"name": "animationId",
+"type": "Id"
+},
+"431": {
+"name": "format",
+"type": "String"
+},
+"432": {
+"name": "width",
+"type": "double"
+},
+"433": {
+"name": "height",
+"type": "double"
+},
+"434": {
+"name": "duration",
+"type": "uint"
+},
+"435": {
+"name": "durationMultiplier",
+"type": "double"
+},
+"436": {
+"name": "frameRate",
+"type": "uint"
+},
+"437": {
+"name": "bitrate",
+"type": "uint"
+},
+"438": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"439": {
+"name": "flags",
+"type": "uint"
+},
+"90": {
+"name": "x",
+"type": "double"
+},
+"91": {
+"name": "y",
+"type": "double"
+},
+"195": {
+"name": "minMaxSpaceValue",
+"type": "uint"
+},
+"182": {
+"name": "copyFactor",
+"type": "double"
+},
+"183": {
+"name": "minValue",
+"type": "double"
+},
+"184": {
+"name": "maxValue",
+"type": "double"
+},
+"188": {
+"name": "offset",
+"type": "bool"
+},
+"189": {
+"name": "doesCopy",
+"type": "bool"
+},
+"190": {
+"name": "min",
+"type": "bool"
+},
+"191": {
+"name": "max",
+"type": "bool"
+},
+"276": {
+"name": "axisPosition",
+"type": "double"
+},
+"277": {
+"name": "axisValue",
+"type": "uint"
+},
+"185": {
+"name": "copyFactorY",
+"type": "double"
+},
+"186": {
+"name": "minValueY",
+"type": "double"
+},
+"187": {
+"name": "maxValueY",
+"type": "double"
+},
+"192": {
+"name": "doesCopyY",
+"type": "bool"
+},
+"193": {
+"name": "minY",
+"type": "bool"
+},
+"194": {
+"name": "maxY",
+"type": "bool"
+},
+"893": {
+"name": "generatorFunctionRef",
+"type": "uint"
+},
+"914": {
+"name": "isModule",
+"type": "bool"
+},
+"927": {
+"name": "dependencyIds",
+"type": "List<Id>"
+},
+"938": {
+"name": "compilationOrder",
+"type": "uint"
+},
+"1022": {
+"name": "serializedImplementedMethods",
+"type": "uint"
+},
+"1035": {
+"name": "scriptProtocolValue",
+"type": "uint"
+},
+"901": {
+"name": "codeFileId",
+"type": "Id"
+},
+"840": {
+"name": "recentlyEditedIndex",
+"type": "FractionalIndex"
+},
+"926": {
+"name": "folderPath",
+"type": "String"
+},
+"933": {
+"name": "codeFileText",
+"type": "String"
+},
+"876": {
+"name": "artboardId",
+"type": "Id"
+},
+"877": {
+"name": "dataTypeId",
+"type": "Id"
+},
+"906": {
+"name": "scriptedObjectId",
+"type": "Id"
+},
+"867": {
+"name": "dataTypeId",
+"type": "Id"
+},
+"866": {
+"name": "dataBindPathIds",
+"type": "List<Id>"
+},
+"925": {
+"name": "isDataBindPathRelative",
+"type": "bool"
+},
+"1087": {
+"name": "language",
+"type": "uint"
+},
+"892": {
+"name": "scriptAssetId",
+"type": "Id"
+},
+"848": {
+"name": "scriptAssetId",
+"type": "Id"
+},
+"1015": {
+"name": "scriptAssetId",
+"type": "Id"
+},
+"930": {
+"name": "scriptAssetId",
+"type": "Id"
+},
+"912": {
+"name": "scriptAssetId",
+"type": "Id"
+},
+"273": {
+"name": "activeComponentId",
+"type": "Id"
+},
+"414": {
+"name": "listSource",
+"type": "Id"
+},
+"931": {
+"name": "scriptAssetId",
+"type": "Id"
+},
+"153": {
+"name": "transitionId",
+"type": "Id"
+},
+"154": {
+"name": "conditionOrder",
+"type": "FractionalIndex"
+},
+"725": {
+"name": "scrollConstraintId",
+"type": "Id"
+},
+"734": {
+"name": "autoSize",
+"type": "bool"
+},
+"722": {
+"name": "directionValue",
+"type": "uint"
+},
+"759": {
+"name": "scrollOffsetX",
+"type": "double"
+},
+"760": {
+"name": "scrollOffsetY",
+"type": "double"
+},
+"761": {
+"name": "scrollPercentX",
+"type": "double"
+},
+"762": {
+"name": "scrollPercentY",
+"type": "double"
+},
+"763": {
+"name": "scrollIndex",
+"type": "double"
+},
+"724": {
+"name": "snap",
+"type": "bool"
+},
+"727": {
+"name": "physicsTypeValue",
+"type": "uint"
+},
+"726": {
+"name": "physicsId",
+"type": "Id"
+},
+"850": {
+"name": "virtualize",
+"type": "bool"
+},
+"221": {
+"name": "virtualizeBuffer",
+"type": "uint8"
+},
+"851": {
+"name": "infinite",
+"type": "bool"
+},
+"891": {
+"name": "interactive",
+"type": "bool"
+},
+"894": {
+"name": "threshold",
+"type": "double"
+},
+"1023": {
+"name": "velocityX",
+"type": "double"
+},
+"1024": {
+"name": "velocityY",
+"type": "double"
+},
+"1025": {
+"name": "scrollActive",
+"type": "bool"
+},
+"1029": {
+"name": "dragMultiplier",
+"type": "double"
+},
+"1069": {
+"name": "computedContentWidth",
+"type": "double"
+},
+"1070": {
+"name": "computedContentHeight",
+"type": "double"
+},
+"982": {
+"name": "role",
+"type": "uint"
+},
+"983": {
+"name": "label",
+"type": "String"
+},
+"984": {
+"name": "value",
+"type": "String"
+},
+"985": {
+"name": "hint",
+"type": "String"
+},
+"986": {
+"name": "headingLevel",
+"type": "uint"
+},
+"987": {
+"name": "traitFlags",
+"type": "uint"
+},
+"988": {
+"name": "stateFlags",
+"type": "uint"
+},
+"989": {
+"name": "isExpandable",
+"type": "bool"
+},
+"990": {
+"name": "isSelectable",
+"type": "bool"
+},
+"991": {
+"name": "isCheckable",
+"type": "bool"
+},
+"992": {
+"name": "isToggleable",
+"type": "bool"
+},
+"993": {
+"name": "isRequirable",
+"type": "bool"
+},
+"994": {
+"name": "isEnablable",
+"type": "bool"
+},
+"995": {
+"name": "isFocusable",
+"type": "bool"
+},
+"996": {
+"name": "isExpanded",
+"type": "bool"
+},
+"997": {
+"name": "isSelected",
+"type": "bool"
+},
+"998": {
+"name": "isChecked",
+"type": "uint8"
+},
+"1000": {
+"name": "isToggled",
+"type": "bool"
+},
+"1001": {
+"name": "isRequired",
+"type": "bool"
+},
+"1002": {
+"name": "isDisabled",
+"type": "bool"
+},
+"1003": {
+"name": "isFocused",
+"type": "bool"
+},
+"1004": {
+"name": "isHidden",
+"type": "bool"
+},
+"1005": {
+"name": "isLiveRegion",
+"type": "bool"
+},
+"1006": {
+"name": "isReadOnly",
+"type": "bool"
+},
+"1007": {
+"name": "isModal",
+"type": "bool"
+},
+"1008": {
+"name": "isObscured",
+"type": "bool"
+},
+"1009": {
+"name": "isMultiline",
+"type": "bool"
+},
+"1010": {
+"name": "actionType",
+"type": "uint"
+},
+"781": {
+"name": "length",
+"type": "double"
+},
+"104": {
+"name": "xx",
+"type": "double"
+},
+"105": {
+"name": "yx",
+"type": "double"
+},
+"106": {
+"name": "xy",
+"type": "double"
+},
+"107": {
+"name": "yy",
+"type": "double"
+},
+"108": {
+"name": "tx",
+"type": "double"
+},
+"109": {
+"name": "ty",
+"type": "double"
+},
+"37": {
+"name": "colorValue",
+"type": "Color"
+},
+"296": {
+"name": "activeComponentId",
+"type": "Id"
+},
+"127": {
+"name": "innerRadius",
+"type": "double"
+},
+"142": {
+"name": "editingLayerId",
+"type": "Id"
+},
+"250": {
+"name": "isListenersPanelOpen",
+"type": "bool"
+},
+"251": {
+"name": "isInputsPanelOpen",
+"type": "bool"
+},
+"252": {
+"name": "isConsolePanelOpen",
+"type": "bool"
+},
+"253": {
+"name": "listenersPanelSize",
+"type": "double"
+},
+"254": {
+"name": "inputsPanelSize",
+"type": "double"
+},
+"852": {
+"name": "dismissInputPanelPrompt",
+"type": "bool"
+},
+"255": {
+"name": "consolePanelSize",
+"type": "double"
+},
+"771": {
+"name": "conditionsPanelSize",
+"type": "double"
+},
+"767": {
+"name": "pinConditionsPanel",
+"type": "bool"
+},
+"768": {
+"name": "resizableConditionsPanel",
+"type": "bool"
+},
+"769": {
+"name": "minimizeConditionFlows",
+"type": "bool"
+},
+"947": {
+"name": "trayType",
+"type": "uint"
+},
+"948": {
+"name": "trayPanelSize",
+"type": "double"
+},
+"960": {
+"name": "flags",
+"type": "uint"
+},
+"141": {
+"name": "value",
+"type": "bool"
+},
+"232": {
+"name": "playbackValue",
+"type": "bool"
+},
+"402": {
+"name": "isPublic",
+"type": "bool"
+},
+"137": {
+"name": "machineId",
+"type": "Id"
+},
+"138": {
+"name": "name",
+"type": "String"
+},
+"139": {
+"name": "machineOrder",
+"type": "FractionalIndex"
+},
+"311": {
+"name": "folderId",
+"type": "Id"
+},
+"404": {
+"name": "nestedArtboardId",
+"type": "Id"
+},
+"392": {
+"name": "eventId",
+"type": "Id"
+},
+"391": {
+"name": "layerComponentId",
+"type": "Id"
+},
+"393": {
+"name": "occursValue",
+"type": "uint8"
+},
+"394": {
+"name": "fireOrder",
+"type": "FractionalIndex"
+},
+"871": {
+"name": "viewModelPathIds",
+"type": "List<Id>"
+},
+"923": {
+"name": "isDataBindPathRelative",
+"type": "bool"
+},
+"143": {
+"name": "stageZoom",
+"type": "double"
+},
+"144": {
+"name": "stageX",
+"type": "double"
+},
+"145": {
+"name": "stageY",
+"type": "double"
+},
+"754": {
+"name": "flags",
+"type": "uint"
+},
+"224": {
+"name": "targetId",
+"type": "Id"
+},
+"225": {
+"name": "listenerTypeValue",
+"type": "uint"
+},
+"399": {
+"name": "eventId",
+"type": "Id"
+},
+"868": {
+"name": "viewModelPathIds",
+"type": "List<Id>"
+},
+"924": {
+"name": "isDataBindPathRelative",
+"type": "bool"
+},
+"403": {
+"name": "nestedInputId",
+"type": "Id"
+},
+"140": {
+"name": "value",
+"type": "double"
+},
+"231": {
+"name": "playbackValue",
+"type": "double"
+},
+"26": {
+"name": "radius",
+"type": "double"
+},
+"47": {
+"name": "thickness",
+"type": "double"
+},
+"48": {
+"name": "cap",
+"type": "uint8"
+},
+"49": {
+"name": "join",
+"type": "uint8"
+},
+"50": {
+"name": "transformAffectsStroke",
+"type": "bool"
+},
+"383": {
+"name": "name",
+"type": "String"
+},
+"384": {
+"name": "colorValue",
+"type": "Color"
+},
+"385": {
+"name": "flags",
+"type": "uint"
+},
+"388": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"386": {
+"name": "dependentIds",
+"type": "List<Id>"
+},
+"922": {
+"name": "targetId",
+"type": "Id"
+},
+"95": {
+"name": "boneId",
+"type": "Id"
+},
+"96": {
+"name": "xx",
+"type": "double"
+},
+"97": {
+"name": "yx",
+"type": "double"
+},
+"98": {
+"name": "xy",
+"type": "double"
+},
+"99": {
+"name": "yy",
+"type": "double"
+},
+"100": {
+"name": "tx",
+"type": "double"
+},
+"101": {
+"name": "ty",
+"type": "double"
+},
+"281": {
+"name": "alignValue",
+"type": "uint8"
+},
+"284": {
+"name": "sizingValue",
+"type": "uint8"
+},
+"287": {
+"name": "overflowValue",
+"type": "uint8"
+},
+"285": {
+"name": "width",
+"type": "double"
+},
+"286": {
+"name": "height",
+"type": "double"
+},
+"310": {
+"name": "highlightTextRuns",
+"type": "bool"
+},
+"366": {
+"name": "originX",
+"type": "double"
+},
+"367": {
+"name": "originY",
+"type": "double"
+},
+"371": {
+"name": "paragraphSpacing",
+"type": "double"
+},
+"377": {
+"name": "originValue",
+"type": "uint8"
+},
+"683": {
+"name": "wrapValue",
+"type": "uint8"
+},
+"685": {
+"name": "verticalAlignValue",
+"type": "uint8"
+},
+"703": {
+"name": "fitFromBaseline",
+"type": "bool"
+},
+"315": {
+"name": "fitFontSizeResizesBox",
+"type": "bool"
+},
+"932": {
+"name": "textRunListSource",
+"type": "Id"
+},
+"1026": {
+"name": "verticalTrimValue",
+"type": "uint16"
+},
+"1027": {
+"name": "verticalTrimTopValue",
+"type": "uint8"
+},
+"1028": {
+"name": "verticalTrimBottomValue",
+"type": "uint8"
+},
+"1043": {
+"name": "formatExtension",
+"type": "String"
+},
+"779": {
+"name": "radial",
+"type": "bool"
+},
+"782": {
+"name": "orient",
+"type": "bool"
+},
+"783": {
+"name": "start",
+"type": "double"
+},
+"784": {
+"name": "end",
+"type": "double"
+},
+"785": {
+"name": "strength",
+"type": "double"
+},
+"786": {
+"name": "offset",
+"type": "double"
+},
+"778": {
+"name": "targetId",
+"type": "Id"
+},
+"817": {
+"name": "text",
+"type": "String"
+},
+"818": {
+"name": "selectionRadius",
+"type": "double"
+},
+"819": {
+"name": "fieldHeight",
+"type": "double"
+},
+"979": {
+"name": "multiline",
+"type": "bool"
+},
+"222": {
+"name": "alignValue",
+"type": "uint"
+},
+"1094": {
+"name": "verticalAlignValue",
+"type": "uint"
+},
+"1095": {
+"name": "obscured",
+"type": "bool"
+},
+"1099": {
+"name": "selectAllOnFocus",
+"type": "bool"
+},
+"335": {
+"name": "modifierFlags",
+"type": "uint"
+},
+"328": {
+"name": "originX",
+"type": "double"
+},
+"329": {
+"name": "originY",
+"type": "double"
+},
+"324": {
+"name": "opacity",
+"type": "double"
+},
+"322": {
+"name": "x",
+"type": "double"
+},
+"323": {
+"name": "y",
+"type": "double"
+},
+"332": {
+"name": "rotation",
+"type": "double"
+},
+"330": {
+"name": "scaleX",
+"type": "double"
+},
+"331": {
+"name": "scaleY",
+"type": "double"
+},
+"327": {
+"name": "modifyFrom",
+"type": "double"
+},
+"336": {
+"name": "modifyTo",
+"type": "double"
+},
+"334": {
+"name": "strength",
+"type": "double"
+},
+"316": {
+"name": "unitsValue",
+"type": "uint"
+},
+"325": {
+"name": "typeValue",
+"type": "uint"
+},
+"326": {
+"name": "modeValue",
+"type": "uint"
+},
+"333": {
+"name": "clamp",
+"type": "bool"
+},
+"317": {
+"name": "falloffFrom",
+"type": "double"
+},
+"318": {
+"name": "falloffTo",
+"type": "double"
+},
+"319": {
+"name": "offset",
+"type": "double"
+},
+"378": {
+"name": "runId",
+"type": "Id"
+},
+"274": {
+"name": "fontSize",
+"type": "double"
+},
+"370": {
+"name": "lineHeight",
+"type": "double"
+},
+"390": {
+"name": "letterSpacing",
+"type": "double"
+},
+"279": {
+"name": "fontAssetId",
+"type": "Id"
+},
+"341": {
+"name": "familyName",
+"type": "String"
+},
+"342": {
+"name": "styleName",
+"type": "String"
+},
+"353": {
+"name": "isCustomFont",
+"type": "bool"
+},
+"289": {
+"name": "tag",
+"type": "uint"
+},
+"288": {
+"name": "axisValue",
+"type": "double"
+},
+"1071": {
+"name": "cornerRadius",
+"type": "double"
+},
+"356": {
+"name": "tag",
+"type": "uint"
+},
+"357": {
+"name": "featureValue",
+"type": "uint"
+},
+"272": {
+"name": "styleId",
+"type": "Id"
+},
+"268": {
+"name": "text",
+"type": "String"
+},
+"398": {
+"name": "fieldHeight",
+"type": "double"
+},
+"320": {
+"name": "axisTag",
+"type": "uint"
+},
+"321": {
+"name": "axisValue",
+"type": "double"
+},
+"372": {
+"name": "originX",
+"type": "double"
+},
+"373": {
+"name": "originY",
+"type": "double"
+},
+"648": {
+"name": "leftComparatorId",
+"type": "Id"
+},
+"649": {
+"name": "rightComparatorId",
+"type": "Id"
+},
+"650": {
+"name": "opValue",
+"type": "uint"
+},
+"156": {
+"name": "opValue",
+"type": "uint8"
+},
+"155": {
+"name": "inputId",
+"type": "Id"
+},
+"157": {
+"name": "value",
+"type": "double"
+},
+"677": {
+"name": "propertyType",
+"type": "uint"
+},
+"977": {
+"name": "objectId",
+"type": "Id"
+},
+"978": {
+"name": "propertyKey",
+"type": "uint"
+},
+"646": {
+"name": "bindablePropertyId",
+"type": "Id"
+},
+"653": {
+"name": "value",
+"type": "Id"
+},
+"647": {
+"name": "value",
+"type": "bool"
+},
+"651": {
+"name": "value",
+"type": "Color"
+},
+"652": {
+"name": "value",
+"type": "double"
+},
+"654": {
+"name": "value",
+"type": "String"
+},
+"689": {
+"name": "value",
+"type": "uint"
+},
+"114": {
+"name": "start",
+"type": "double"
+},
+"115": {
+"name": "end",
+"type": "double"
+},
+"116": {
+"name": "offset",
+"type": "double"
+},
+"117": {
+"name": "modeValue",
+"type": "uint"
+},
+"566": {
+"name": "viewModelId",
+"type": "Id"
+},
+"567": {
+"name": "x",
+"type": "double"
+},
+"568": {
+"name": "y",
+"type": "double"
+},
+"569": {
+"name": "onStage",
+"type": "bool"
+},
+"739": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"740": {
+"name": "exports",
+"type": "bool"
+},
+"1034": {
+"name": "isOverride",
+"type": "bool"
+},
+"846": {
+"name": "propertyValue",
+"type": "Id"
+},
+"847": {
+"name": "playbackValue",
+"type": "Id"
+},
+"553": {
+"name": "viewModelInstanceId",
+"type": "Id"
+},
+"554": {
+"name": "viewModelPropertyId",
+"type": "Id"
+},
+"824": {
+"name": "propertyValue",
+"type": "Id"
+},
+"822": {
+"name": "playbackValue",
+"type": "Id"
+},
+"593": {
+"name": "propertyValue",
+"type": "bool"
+},
+"594": {
+"name": "playbackValue",
+"type": "bool"
+},
+"555": {
+"name": "propertyValue",
+"type": "Color"
+},
+"556": {
+"name": "playbackValue",
+"type": "Color"
+},
+"560": {
+"name": "propertyValue",
+"type": "Id"
+},
+"684": {
+"name": "playbackValue",
+"type": "Id"
+},
+"966": {
+"name": "listSource",
+"type": "Id"
+},
+"742": {
+"name": "name",
+"type": "String"
+},
+"548": {
+"name": "instanceListId",
+"type": "Id"
+},
+"549": {
+"name": "viewModelId",
+"type": "Id"
+},
+"550": {
+"name": "viewModelInstanceId",
+"type": "Id"
+},
+"552": {
+"name": "order",
+"type": "FractionalIndex"
+},
+"575": {
+"name": "propertyValue",
+"type": "double"
+},
+"576": {
+"name": "playbackValue",
+"type": "double"
+},
+"561": {
+"name": "propertyValue",
+"type": "String"
+},
+"562": {
+"name": "playbackValue",
+"type": "String"
+},
+"814": {
+"name": "propertyValue",
+"type": "uint"
+},
+"815": {
+"name": "playbackValue",
+"type": "uint"
+},
+"687": {
+"name": "propertyValue",
+"type": "uint"
+},
+"688": {
+"name": "playbackValue",
+"type": "uint"
+},
+"1016": {
+"name": "fire",
+"type": "callback"
+},
+"577": {
+"name": "propertyValue",
+"type": "Id"
+}
+}
+}

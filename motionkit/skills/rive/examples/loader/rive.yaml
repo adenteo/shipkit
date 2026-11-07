@@ -1,0 +1,4 @@
+name: Loader
+exclude:
+  - "*.py"
+  - "shots/**"

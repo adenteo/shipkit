@@ -10,6 +10,12 @@
       "source": "./",
       "description": "A guided path from app code to the App Store.",
       "version": "0.2.1"
+    },
+    {
+      "name": "motionkit",
+      "source": "./motionkit",
+      "description": "App animations as code: Rive, Rive characters, and Lottie.",
+      "version": "0.1.0"
     }
   ]
 }

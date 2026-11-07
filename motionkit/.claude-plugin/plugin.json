@@ -1,0 +1,19 @@
+{
+  "name": "motionkit",
+  "version": "0.1.0",
+  "description": "Make app animations as code: Rive (.riv) from RML text with the Rive CLI, character rigging, and Lottie (JSON) drawn from a standard-library Python kit, with headless preview and quality gates.",
+  "author": {
+    "name": "Aden Teo"
+  },
+  "license": "MIT",
+  "keywords": [
+    "animation",
+    "lottie",
+    "rive",
+    "micro-interactions",
+    "ios",
+    "react-native",
+    "motion",
+    "mascot"
+  ]
+}

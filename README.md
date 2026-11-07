@@ -88,6 +88,17 @@ skills/ship-*/         one skill per step, each with its own scripts and referen
 Every skill reads and writes `.ship/` in your app repo; the contract is
 `skills/ship/references/ship-json.md`.
 
+## Also in this marketplace
+
+**motionkit** makes app animations as code: Rive files from RML text, Rive character rigs, and
+Lottie JSON drawn from Python, with headless previews and a review bar.
+
+```
+/plugin install motionkit@shipkit
+```
+
+See `motionkit/README.md`.
+
 ## License
 
 MIT

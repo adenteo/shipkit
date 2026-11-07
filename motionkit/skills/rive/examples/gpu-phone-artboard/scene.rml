@@ -1,0 +1,79 @@
+<Rive version="1" kind="fragment">
+    <!-- Main: a fill-sized ScriptedLayout that draws the 3D phone; the Screen artboard comes in as an input -->
+    <Artboard defaultStateMachineId="0:7" width="600" height="700" styleId="0:5" name="Main" id="0:2">
+        <Fill name="Background"><SolidColor colorValue="FFC8E6F5" name="Color"/></Fill>
+        <LayoutComponentStyle name="Artboard Style" id="0:5"/>
+        <LayoutComponent width="600" height="700" styleId="0:11" name="Root" id="0:10">
+            <LayoutComponentStyle layoutWidthScaleType="1" layoutHeightScaleType="1" widthUnitsValue="3" heightUnitsValue="3" name="Style" id="0:11"/>
+            <ScriptedLayout scriptAssetId="0:80" name="Phone3D" id="0:12">
+                <ScriptInputArtboard artboardId="0:100" name="screen"/>
+            </ScriptedLayout>
+        </LayoutComponent>
+        <StateMachine name="SM" id="0:7">
+            <StateMachineLayer name="Layer 1" id="0:8"><AnyState/><ExitState/><EntryState/></StateMachineLayer>
+        </StateMachine>
+    </Artboard>
+
+    <!-- Screen: an ordinary 2D artboard with its own state machine; it becomes the phone's texture -->
+    <Artboard defaultStateMachineId="0:107" width="360" height="740" styleId="0:105" viewModelId="0:200" name="Screen" id="0:100">
+        <Fill name="Background">
+            <LinearGradient startX="0" startY="0" endX="0" endY="740" name="G">
+                <GradientStop colorValue="FFFFF4E8" position="0"/>
+                <GradientStop colorValue="FFFCE1E6" position="1"/>
+            </LinearGradient>
+        </Fill>
+        <LayoutComponentStyle name="Screen Style" id="0:105"/>
+        <Text x="28" y="70" width="304" height="50" name="Title" id="0:120">
+            <TextStylePaint fontSize="34" fontAssetId="0:30" name="S" id="0:121">
+                <Fill name="Fill"><SolidColor colorValue="FF3E2A22" name="Color"/></Fill>
+            </TextStylePaint>
+            <TextValueRun styleId="0:121" text="Live artboard" name="Run"/>
+        </Text>
+        <Shape x="180" y="330" name="Dot" id="0:140">
+            <DataBindContext sourcePathIds="0:200-0:201" propertyKey="13"/>
+            <Ellipse width="120" height="120" originX="0.5" originY="0.5" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FFFFFEFC" name="Color"/></Fill>
+        </Shape>
+        <Shape x="180" y="330" name="Card" id="0:130">
+            <Rectangle width="300" height="300" cornerRadiusTL="28" cornerRadiusTR="28" cornerRadiusBL="28" cornerRadiusBR="28" originX="0.5" originY="0.5" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FFF29AA6" name="Color"/></Fill>
+        </Shape>
+        <Shape x="180" y="620" name="Tab" id="0:150">
+            <Rectangle width="300" height="64" cornerRadiusTL="32" cornerRadiusTR="32" cornerRadiusBL="32" cornerRadiusBR="32" originX="0.5" originY="0.5" name="Path"/>
+            <Fill name="Fill"><SolidColor colorValue="FF3E2A22" name="Color"/></Fill>
+        </Shape>
+        <StateMachine name="SM" id="0:107">
+            <StateMachineListenerSingle targetId="0:150" listenerTypeValue="click" name="Tap tab" id="0:160">
+                <ListenerViewModelChange>
+                    <BindablePropertyNumber propertyValue="260">
+                        <DataBindContext sourcePathIds="0:200-0:201" propertyKey="636" direction="true"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListenerSingle>
+            <StateMachineLayer name="Layer 1" id="0:108">
+                <AnyState/><ExitState/>
+                <EntryState><StateTransition stateToId="0:112"/></EntryState>
+                <AnimationState animationId="0:106" id="0:112"/>
+            </StateMachineLayer>
+        </StateMachine>
+        <LinearAnimation loopValue="2" duration="60" name="Pulse" id="0:106">
+            <KeyedObject objectId="0:140">
+                <KeyedProperty propertyKey="16">
+                    <KeyFrameDouble value="1" interpolationType="1"/>
+                    <KeyFrameDouble value="1.6" interpolationType="1" frame="60"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+
+    <ViewModel defaultInstanceId="0:202" name="ScreenVM" id="0:200">
+        <ViewModelPropertyNumber name="dotX" id="0:201"/>
+        <ViewModelInstance exports="true" name="Instance" id="0:202">
+            <ViewModelInstanceNumber propertyValue="100" viewModelPropertyId="0:201"/>
+        </ViewModelInstance>
+    </ViewModel>
+
+    <FontAsset file="Montserrat.ttf" name="Montserrat" id="0:30"/>
+    <ScriptAsset file="phone3d.luau" name="phone3d" id="0:80"/>
+    <BlobAsset file="phone.glb" name="phone" id="0:90"/>
+</Rive>

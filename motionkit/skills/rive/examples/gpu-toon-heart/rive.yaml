@@ -1,0 +1,9 @@
+name: toon
+main: main
+artboard:
+  width: 600
+  height: 600
+  background: "#C8E6F5"
+logs:
+  file: build/rive.log
+  problems: build/problems.log

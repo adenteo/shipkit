@@ -1,0 +1,4 @@
+name: PillButton
+exclude:
+  - "*.py"
+  - "shots/**"
