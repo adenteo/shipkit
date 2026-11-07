@@ -384,6 +384,15 @@ def check_listing(ctx, locale, src, dst):
             out.append(("FAIL", f"{locale} {f}: {len(v)}/{LISTING_LIMITS[f]} characters"))
         if f in src and f in LISTING_LIMITS and f != "keywords":  # URLs are copied, not translated
             out += check_text(ctx, locale, src[f], v, f)
+    if not locale.startswith("en") and src.get("description") and dst.get("description"):
+        src_lines = {x.strip() for x in src["description"].splitlines() if len(x.strip()) > 8}
+        keep = [w.lower() for w in ctx.keep()]
+        left = [x.strip() for x in dst["description"].splitlines()
+                if x.strip() in src_lines and not URLISH.search(x)
+                and re.sub(r"[\W\d_]", "", x.lower()) not in {re.sub(r"[\W\d_]", "", k) for k in keep}]
+        if left:
+            out.append(("FAIL", f"{locale} description: {len(left)} line(s) left in the source language, "
+                                f"for example {left[0]!r}"))
     if ctx.name and ctx.name not in (dst.get("name") or ""):
         out.append(("FAIL", f"{locale} name: does not contain {ctx.name}"))
     for f in ("name", "subtitle"):
