@@ -13,9 +13,9 @@ the raws it finds. All colours are hex.
   "fonts": { "display": "Lilita One", "body": "Nunito" },
   "locales": ["en-US"],
   "slides": [
-    { "raw": "01-play", "headline": "Slash four.\n*Watch them fall.*", "subline": "One swipe clears a group" },
-    { "raw": "02-daily", "style": "hero", "raw2": "01-play", "headline": "A new wall *every day*" },
-    { "raw": "03-win", "style": "fullbleed", "headline": "Cash it in", "bg": "#3b1d8f,#24106a" }
+    { "raw": "01-play", "headline": "Match three.\n*Watch them pop.*", "subline": "One swipe clears a row" },
+    { "raw": "02-daily", "style": "hero", "raw2": "01-play", "headline": "A new board *every day*" },
+    { "raw": "03-win", "style": "fullbleed", "headline": "Beat your best", "bg": "#3b1d8f,#24106a" }
   ]
 }
 ```
